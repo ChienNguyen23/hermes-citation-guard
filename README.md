@@ -142,6 +142,13 @@ What you would want to know before installing:
 ```bash
 python3 -I tests/test_offline.py     # 54 offline tests: extraction, BibTeX, every verdict, the hook
 python3 -I bench/run_bench.py        # live benchmark (network, a few minutes)
+
+# inside a real Hermes install: tool via the tool registry, hook via invoke_hook, /citecheck via the
+# plugin command table (17 checks, network, no LLM needed)
+HERMES_HOME=<home> <hermes-venv>/bin/python tests/hermes_integration.py
 ```
+
+`hermes plugins validate . --install-deps` passes all checks (manifest, capability match, security
+scan "safe", no core override) and `hermes plugins doctor` loads and registers the plugin.
 
 MIT licensed.
