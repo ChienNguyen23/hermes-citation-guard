@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+bench/.bench_cache.json
+bench/run.log
+.DS_Store
+bench/*.log

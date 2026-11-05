@@ -1,0 +1,2902 @@
+[
+ {
+  "authors": [
+   [
+    "Yamaguchi",
+    "R."
+   ],
+   [
+    "Yamamoto",
+    "T."
+   ],
+   [
+    "Sakamoto",
+    "A."
+   ],
+   [
+    "Ishimaru",
+    "Y."
+   ],
+   [
+    "Narahara",
+    "S."
+   ],
+   [
+    "Sugiuchi",
+    "H."
+   ],
+   [
+    "Yamaguchi",
+    "Y."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2015,
+  "title": "Chemokine profiles of human visceral adipocytes from cryopreserved preadipocytes: Neutrophil activation and induction of nuclear factor-kappa B repressing factor",
+  "journal": "Life Sci.",
+  "volume": "143",
+  "fpage": "225",
+  "lpage": "230",
+  "doi": "10.1016/j.lfs.2015.11.010",
+  "from": "PMC6747275"
+ },
+ {
+  "authors": [
+   [
+    "Suganami",
+    "T."
+   ],
+   [
+    "Tanimoto-Koyama",
+    "K."
+   ],
+   [
+    "Nishida",
+    "J."
+   ],
+   [
+    "Itoh",
+    "M."
+   ],
+   [
+    "Yuan",
+    "X."
+   ],
+   [
+    "Mizuarai",
+    "S."
+   ],
+   [
+    "Kotani",
+    "H."
+   ],
+   [
+    "Yamaoka",
+    "S."
+   ]
+  ],
+  "n_authors": 10,
+  "year": 2007,
+  "title": "Role of the Toll-like receptor 4/NF-kappaB pathway in saturated fatty acid-induced inflammatory changes in the interaction between adipocytes and macrophages",
+  "journal": "Arterioscler. Thromb. Vasc. Biol.",
+  "volume": "27",
+  "fpage": "84",
+  "lpage": "91",
+  "doi": "10.1161/01.ATV.0000251608.09329.9a",
+  "from": "PMC6747275"
+ },
+ {
+  "authors": [
+   [
+    "Limbert",
+    "C."
+   ],
+   [
+    "Ebert",
+    "R."
+   ],
+   [
+    "Schilling",
+    "T."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2010,
+  "title": "Functional signature of human islet-derived precursor cells compared to bone marrow-derived mesenchymal stem cells",
+  "journal": "Stem Cells and Development",
+  "volume": "19",
+  "fpage": "679",
+  "lpage": "691",
+  "doi": "10.1089/scd.2009.0241",
+  "from": "PMC6441529"
+ },
+ {
+  "authors": [
+   [
+    "Ambarus",
+    "C. A."
+   ],
+   [
+    "Noordenbos",
+    "T."
+   ],
+   [
+    "de Hair",
+    "M. J. H."
+   ],
+   [
+    "Tak",
+    "P. P."
+   ],
+   [
+    "Baeten",
+    "D. L. P."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2012,
+  "title": "Intimal lining layer macrophages but not synovial sublining macrophages display an IL-10 polarized-like phenotype in chronic synovitis",
+  "journal": "Arthritis Research & Therapy",
+  "volume": "14",
+  "fpage": "p. R74",
+  "lpage": "",
+  "doi": "10.1186/ar3796",
+  "from": "PMC6441529"
+ },
+ {
+  "authors": [
+   [
+    "Kendall-Tackett",
+    "KA"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2000,
+  "title": "Physiological correlates of childhood abuse: chronic in PTSD, depression, and irritable bowel syndrome",
+  "journal": "Child Abuse Negl",
+  "volume": "24",
+  "fpage": "799",
+  "lpage": "810",
+  "doi": "10.1016/S0145-2134(00)00136-8",
+  "from": "PMC4316793"
+ },
+ {
+  "authors": [
+   [
+    "Jones",
+    "MP"
+   ],
+   [
+    "Wessingar",
+    "S"
+   ],
+   [
+    "Crowell",
+    "MD"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2006,
+  "title": "Coping strategies and interpersonal support in patients with irritable bowel syndrome and inflammatory bowel disease",
+  "journal": "Clin Gastroenterol Hepatol",
+  "volume": "4",
+  "fpage": "474",
+  "lpage": "81",
+  "doi": "10.1016/j.cgh.2005.12.012",
+  "from": "PMC4316793"
+ },
+ {
+  "authors": [
+   [
+    "Lee",
+    "J.H."
+   ],
+   [
+    "Choi",
+    "J.-S."
+   ],
+   [
+    "Jeon",
+    "E.S."
+   ],
+   [
+    "Kim",
+    "Y.G."
+   ],
+   [
+    "Le",
+    "T.T."
+   ],
+   [
+    "Shin",
+    "K.Y."
+   ],
+   [
+    "Lee",
+    "H.C."
+   ],
+   [
+    "Park",
+    "K.R."
+   ]
+  ],
+  "n_authors": 8,
+  "year": 2015,
+  "title": "Robust pedestrian detection by combining visible and thermal infrared cameras",
+  "journal": "Sensors",
+  "volume": "15",
+  "fpage": "10580",
+  "lpage": "10615",
+  "doi": "10.3390/s150510580",
+  "from": "PMC5375923"
+ },
+ {
+  "authors": [
+   [
+    "Bekios-Calfa",
+    "J."
+   ],
+   [
+    "Buenaposada",
+    "J.M."
+   ],
+   [
+    "Baumela",
+    "L."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2014,
+  "title": "Robust gender recognition by exploiting facial attributes dependencies",
+  "journal": "Pattern Recognit. Lett.",
+  "volume": "36",
+  "fpage": "228",
+  "lpage": "234",
+  "doi": "10.1016/j.patrec.2013.04.028",
+  "from": "PMC5375923"
+ },
+ {
+  "authors": [
+   [
+    "Kim",
+    "J.Y."
+   ],
+   [
+    "Chung",
+    "S.M."
+   ],
+   [
+    "Choi",
+    "B.O."
+   ],
+   [
+    "Lee",
+    "I.K."
+   ],
+   [
+    "An",
+    "C.H."
+   ],
+   [
+    "Won",
+    "J.M."
+   ],
+   [
+    "Ryu",
+    "M.R."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2012,
+  "title": "Prognostic significance of the lymph node ratio regarding recurrence and survival in rectal cancer patients treated with postoperative chemoradiotherapy",
+  "journal": "Gut Liver",
+  "volume": "6",
+  "fpage": "203",
+  "lpage": "209",
+  "doi": "10.5009/gnl.2012.6.2.203",
+  "from": "PMC8345552"
+ },
+ {
+  "authors": [
+   [
+    "Chang",
+    "Y.J."
+   ],
+   [
+    "Chang",
+    "Y.J."
+   ],
+   [
+    "Chen",
+    "L.J."
+   ],
+   [
+    "Chung",
+    "K.P."
+   ],
+   [
+    "Lai",
+    "M.S."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2012,
+  "title": "Evaluation of lymph nodes in patients with colon cancer undergoing colon resection: A population-based study",
+  "journal": "World J. Surg.",
+  "volume": "36",
+  "fpage": "1906",
+  "lpage": "1914",
+  "doi": "10.1007/s00268-012-1568-2",
+  "from": "PMC8345552"
+ },
+ {
+  "authors": [
+   [
+    "Stefan",
+    "K."
+   ],
+   [
+    "Kunesch",
+    "E."
+   ],
+   [
+    "Cohen",
+    "L. G."
+   ],
+   [
+    "Benecke",
+    "R."
+   ],
+   [
+    "Classen",
+    "J."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2000,
+  "title": "Induction of plasticity in the human motor cortex by paired associative stimulation",
+  "journal": "Brain",
+  "volume": "123, part 3",
+  "fpage": "572",
+  "lpage": "584",
+  "doi": "10.1093/brain/123.3.572",
+  "from": "PMC5694591"
+ },
+ {
+  "authors": [
+   [
+    "Fregni",
+    "F."
+   ],
+   [
+    "Boggio",
+    "P. S."
+   ],
+   [
+    "Valle",
+    "A. C."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2006,
+  "title": "A sham-controlled trial of a 5-day course of repetitive transcranial magnetic stimulation of the unaffected hemisphere in stroke patients",
+  "journal": "Stroke",
+  "volume": "37",
+  "fpage": "2115",
+  "lpage": "2122",
+  "doi": "10.1161/01.STR.0000231390.58967.6b",
+  "from": "PMC5694591"
+ },
+ {
+  "authors": [
+   [
+    "Betzel",
+    "GT"
+   ],
+   [
+    "Yi",
+    "BY"
+   ],
+   [
+    "Niu",
+    "Y"
+   ],
+   [
+    "Yu",
+    "CX"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2012,
+  "title": "Is RapidArc More Susceptible to Delivery Uncertainties Than Dynamic IMRT",
+  "journal": "Med Phys",
+  "volume": "39",
+  "fpage": "",
+  "lpage": "",
+  "doi": "10.1118/1.4749965",
+  "from": "PMC9157499"
+ },
+ {
+  "authors": [
+   [
+    "Bellec",
+    "J"
+   ],
+   [
+    "Delaby",
+    "N"
+   ],
+   [
+    "Jouyaux",
+    "F"
+   ],
+   [
+    "Perdrieux",
+    "M"
+   ],
+   [
+    "Bouvier",
+    "J"
+   ],
+   [
+    "Sorel",
+    "S"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2017,
+  "title": "Plan Delivery Quality Assurance for CyberKnife: Statistical Process Control Analysis of 350 Film-Based Patient-Specific QAs",
+  "journal": "Phys Med",
+  "volume": "39",
+  "fpage": "",
+  "lpage": "",
+  "doi": "10.1016/j.ejmp.2017.06.016",
+  "from": "PMC9157499"
+ },
+ {
+  "authors": [
+   [
+    "Huang",
+    "Y.H."
+   ],
+   [
+    "Yu-Hsieh",
+    "H."
+   ],
+   [
+    "Huang",
+    "C.C."
+   ],
+   [
+    "Shin-Mu",
+    "V.T."
+   ],
+   [
+    "Tai",
+    "M.H."
+   ],
+   [
+    "Chen",
+    "C.L."
+   ],
+   [
+    "Chuang",
+    "J.H."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2006,
+  "title": "Liver hepcidin and stainable iron expression in biliary atresia",
+  "journal": "Pediatr. Res.",
+  "volume": "59",
+  "fpage": "662",
+  "lpage": "666",
+  "doi": "10.1203/01.pdr.0000214974.55049.f1",
+  "from": "PMC6830328"
+ },
+ {
+  "authors": [
+   [
+    "Lin",
+    "C.L."
+   ],
+   [
+    "Lee",
+    "P.H."
+   ],
+   [
+    "Hsu",
+    "Y.C."
+   ],
+   [
+    "Lei",
+    "C.C."
+   ],
+   [
+    "Ko",
+    "J.Y."
+   ],
+   [
+    "Chuang",
+    "P.C."
+   ],
+   [
+    "Huang",
+    "Y.T."
+   ],
+   [
+    "Wang",
+    "S.Y."
+   ]
+  ],
+  "n_authors": 10,
+  "year": 2014,
+  "title": "MicroRNA-29a promotion of nephrin acetylation ameliorates hyperglycemia-induced podocyte dysfunction",
+  "journal": "J. Am. Soc. Nephrol.",
+  "volume": "25",
+  "fpage": "1698",
+  "lpage": "1709",
+  "doi": "10.1681/ASN.2013050527",
+  "from": "PMC6830328"
+ },
+ {
+  "authors": [
+   [
+    "Tiffany",
+    "J"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2008,
+  "title": "The normal tear film",
+  "journal": "Dev Ophthalmol",
+  "volume": "41",
+  "fpage": "1",
+  "lpage": "20",
+  "doi": "10.1159/000131066",
+  "from": "PMC5028962"
+ },
+ {
+  "authors": [
+   [
+    "Stern",
+    "ME"
+   ],
+   [
+    "Beuerman",
+    "RW"
+   ],
+   [
+    "Fox",
+    "RI"
+   ],
+   [
+    "Gao",
+    "J"
+   ],
+   [
+    "Mircheff",
+    "AK"
+   ],
+   [
+    "Pflugfelder",
+    "SC"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 1998,
+  "title": "The pathology of dry eye: the interaction between the ocular surface and lacrimal glands",
+  "journal": "Cornea",
+  "volume": "17",
+  "fpage": "584",
+  "lpage": "589",
+  "doi": "10.1097/00003226-199811000-00002",
+  "from": "PMC5028962"
+ },
+ {
+  "authors": [
+   [
+    "Nightingale",
+    "T. E."
+   ],
+   [
+    "Gruber",
+    "J."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 1994,
+  "title": "Helicobacter and human cancer",
+  "journal": "Journal of the National Cancer Institute",
+  "volume": "86",
+  "fpage": "1505",
+  "lpage": "1509",
+  "doi": "10.1093/jnci/86.20.1505",
+  "from": "PMC7847344"
+ },
+ {
+  "authors": [
+   [
+    "Chen",
+    "J. S."
+   ],
+   [
+    "Faller",
+    "D. V."
+   ],
+   [
+    "Spanjaard",
+    "R. A."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2003,
+  "title": "Short-chain fatty acid inhibitors of histone deacetylases: promising anticancer therapeutics?",
+  "journal": "Current Cancer Drug Targets",
+  "volume": "3",
+  "fpage": "219",
+  "lpage": "236",
+  "doi": "10.2174/1568009033481994",
+  "from": "PMC7847344"
+ },
+ {
+  "authors": [
+   [
+    "Chasens",
+    "ER"
+   ],
+   [
+    "Olshansky",
+    "E"
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2008,
+  "title": "Daytime sleepiness, diabetes, and psychological well-being",
+  "journal": "Issues Ment Health Nurs",
+  "volume": "29",
+  "fpage": "1134",
+  "lpage": "50",
+  "doi": "10.1080/01612840802319878",
+  "from": "PMC5855214"
+ },
+ {
+  "authors": [
+   [
+    "Bevans",
+    "M"
+   ],
+   [
+    "Wehrlen",
+    "L"
+   ],
+   [
+    "Castro",
+    "K"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2014,
+  "title": "A problem-solving education intervention in caregivers and patients during allogeneic hematopoietic stem cell transplantation",
+  "journal": "J Health Psychol",
+  "volume": "19",
+  "fpage": "602",
+  "lpage": "17",
+  "doi": "10.1177/1359105313475902",
+  "from": "PMC5855214"
+ },
+ {
+  "authors": [
+   [
+    "Brys",
+    "R"
+   ],
+   [
+    "Jacquemyn",
+    "H"
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2011,
+  "title": "Variation in the functioning of autonomous self-pollination, pollinator services and floral traits in three Centaurium species",
+  "journal": "Ann. Bot.",
+  "volume": "107",
+  "fpage": "917",
+  "lpage": "925",
+  "doi": "10.1093/aob/mcr032",
+  "from": "PMC5827715"
+ },
+ {
+  "authors": [
+   [
+    "Duan",
+    "YW"
+   ],
+   [
+    "He",
+    "YP"
+   ],
+   [
+    "Zhang",
+    "TF"
+   ],
+   [
+    "Liu",
+    "JQ"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2007,
+  "title": "Delayed selfing in an alpine species Gentianopsis barbata",
+  "journal": "J. Plant. Ecol.",
+  "volume": "31",
+  "fpage": "110",
+  "lpage": "117",
+  "doi": "10.17521/cjpe.2007.0014",
+  "from": "PMC5827715"
+ },
+ {
+  "authors": [
+   [
+    "Minguet",
+    "J"
+   ],
+   [
+    "Smith",
+    "KH"
+   ],
+   [
+    "Bramlage",
+    "P"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2016,
+  "title": "Targeted therapies for treatment of non-small cell lung cancer--recent advances and future perspectives",
+  "journal": "Int. J. Cancer",
+  "volume": "138",
+  "fpage": "2549",
+  "lpage": "2561",
+  "doi": "10.1002/ijc.29915",
+  "from": "PMC6433914"
+ },
+ {
+  "authors": [
+   [
+    "Yeung",
+    "B"
+   ],
+   [
+    "Yu",
+    "J"
+   ],
+   [
+    "Yang",
+    "X"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2016,
+  "title": "Roles of the hippo pathway in lung development and tumorigenesis",
+  "journal": "Int. J. Cancer",
+  "volume": "138",
+  "fpage": "533",
+  "lpage": "539",
+  "doi": "10.1002/ijc.29457",
+  "from": "PMC6433914"
+ },
+ {
+  "authors": [
+   [
+    "Cao",
+    "S."
+   ],
+   [
+    "Zhan",
+    "Y."
+   ],
+   [
+    "Dong",
+    "Y."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2016,
+  "title": "Emerging data on androgen receptor splice variants in prostate cancer",
+  "journal": "Endocr. Relat. Cancer",
+  "volume": "23",
+  "fpage": "T199",
+  "lpage": "T210",
+  "doi": "10.1530/ERC-16-0298",
+  "from": "PMC5641394"
+ },
+ {
+  "authors": [
+   [
+    "Arteaga",
+    "C. L."
+   ],
+   [
+    "Engelman",
+    "J. A."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2014,
+  "title": "ERBB receptors: from oncogene discovery to basic science to mechanism-based cancer therapeutics",
+  "journal": "Cancer Cell",
+  "volume": "25",
+  "fpage": "282",
+  "lpage": "303",
+  "doi": "10.1016/j.ccr.2014.02.025",
+  "from": "PMC5641394"
+ },
+ {
+  "authors": [
+   [
+    "Hsu",
+    "C.-I."
+   ],
+   [
+    "Wen",
+    "Y.-H."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2000,
+  "title": "Application of grey theory and multiobjective programming towards airline network design",
+  "journal": "Eur. J. Oper. Res.",
+  "volume": "127",
+  "fpage": "44",
+  "lpage": "68",
+  "doi": "10.1016/S0377-2217(99)00320-3",
+  "from": "PMC7037306"
+ },
+ {
+  "authors": [
+   [
+    "Crooks",
+    "V.A."
+   ],
+   [
+    "Kingsbury",
+    "P."
+   ],
+   [
+    "Snyder",
+    "J."
+   ],
+   [
+    "Johnston",
+    "R."
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2010,
+  "title": "What is known about the patient’s experience of medical tourism? A scoping review",
+  "journal": "BMC Health Serv. Res.",
+  "volume": "10",
+  "fpage": "",
+  "lpage": "",
+  "doi": "10.1186/1472-6963-10-266",
+  "from": "PMC7037306"
+ },
+ {
+  "authors": [
+   [
+    "Atanasovska-Stojanovska",
+    "A"
+   ],
+   [
+    "Trajkov",
+    "D"
+   ],
+   [
+    "Popovska",
+    "M"
+   ],
+   [
+    "Spiroski",
+    "M"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2012,
+  "title": "IL10 -1082, IL10 -819 and IL10 -592 polymorphisms are associated with chronic periodontitis in a Macedonian population",
+  "journal": "Hum Immunol",
+  "volume": "73",
+  "fpage": "753",
+  "lpage": "758",
+  "doi": "10.1016/j.humimm.2012.04.009",
+  "from": "PMC6198364"
+ },
+ {
+  "authors": [
+   [
+    "Townsend",
+    "GC"
+   ],
+   [
+    "Aldred",
+    "MJ"
+   ],
+   [
+    "Bartold",
+    "PM"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 1998,
+  "title": "Genetic aspects of dental disorders",
+  "journal": "Aust Dent J",
+  "volume": "43",
+  "fpage": "269",
+  "lpage": "286",
+  "doi": "10.1111/j.1834-7819.1998.tb00176.x",
+  "from": "PMC6198364"
+ },
+ {
+  "authors": [
+   [
+    "Barrett",
+    "JC"
+   ],
+   [
+    "Fry",
+    "B"
+   ],
+   [
+    "Mailer",
+    "J"
+   ],
+   [
+    "Daly",
+    "MJ"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2005,
+  "title": "Haploview: analysis and visualization of LD and haplotype maps",
+  "journal": "Bioinformatics",
+  "volume": "21",
+  "fpage": "263",
+  "lpage": "265",
+  "doi": "10.1093/bioinformatics/bth457",
+  "from": "PMC6754628"
+ },
+ {
+  "authors": [
+   [
+    "Cao",
+    "D"
+   ],
+   [
+    "Jiao",
+    "X"
+   ],
+   [
+    "Liu",
+    "X"
+   ],
+   [
+    "Hennis",
+    "A"
+   ],
+   [
+    "Leske",
+    "MC"
+   ],
+   [
+    "Nemesure",
+    "B"
+   ],
+   [
+    "Hejtmancik",
+    "JF"
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2012,
+  "title": "CDKN2B polymorphism is associated with primary open-angle glaucoma (POAG) in the Afro-Caribbean population of Barbados, West Indies",
+  "journal": "PLoS One",
+  "volume": "7",
+  "fpage": "e39278",
+  "lpage": "",
+  "doi": "10.1371/journal.pone.0039278",
+  "from": "PMC6754628"
+ },
+ {
+  "authors": [
+   [
+    "Bandekar",
+    "J."
+   ],
+   [
+    "Klima",
+    "S."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 1991,
+  "title": "FT-IR spectroscopic studies of polyurethanes Part I. Bonding between urethane, COC groups and the NH groups",
+  "journal": "J. Mol. Struct.",
+  "volume": "263",
+  "fpage": "45",
+  "lpage": "57",
+  "doi": "10.1016/0022-2860(91)80054-8",
+  "from": "PMC7254400"
+ },
+ {
+  "authors": [
+   [
+    "Kosmela",
+    "P."
+   ],
+   [
+    "Hejna",
+    "A."
+   ],
+   [
+    "Formela",
+    "K."
+   ],
+   [
+    "Haponiuk",
+    "J.T."
+   ],
+   [
+    "Piszczyk",
+    "Ł."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2016,
+  "title": "Biopolyols obtained via crude glycerol-based liquefaction of cellulose: Their structural, rheological and thermal characterization",
+  "journal": "Cellulose",
+  "volume": "23",
+  "fpage": "2929",
+  "lpage": "2942",
+  "doi": "10.1007/s10570-016-1034-7",
+  "from": "PMC7254400"
+ },
+ {
+  "authors": [
+   [
+    "Dobin",
+    "A"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2013,
+  "title": "STAR: ultrafast universal RNA-seq aligner",
+  "journal": "Bioinformatics",
+  "volume": "29",
+  "fpage": "15",
+  "lpage": "21",
+  "doi": "10.1093/bioinformatics/bts635",
+  "from": "PMC5931087"
+ },
+ {
+  "authors": [
+   [
+    "Liu",
+    "YF"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2016,
+  "title": "Genomic profiling of adult and pediatric B-cell acute lymphoblastic leukemia",
+  "journal": "EbioMedicine",
+  "volume": "8",
+  "fpage": "173",
+  "lpage": "183",
+  "doi": "10.1016/j.ebiom.2016.04.038",
+  "from": "PMC5931087"
+ },
+ {
+  "authors": [
+   [
+    "Bradshaw",
+    "E"
+   ],
+   [
+    "Le Rossignol",
+    "P"
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2004,
+  "title": "Anthropometric and Biomechanical Field Measures of Floor and Vault Ability in 8 to 14 year old Talent-selected Gymnasts",
+  "journal": "Sports Biomechanics",
+  "volume": "3",
+  "fpage": "249",
+  "lpage": "62",
+  "doi": "10.1080/14763140408522844",
+  "from": "PMC6894803"
+ },
+ {
+  "authors": [
+   [
+    "French",
+    "DN"
+   ],
+   [
+    "Gomez",
+    "AL"
+   ],
+   [
+    "Volek",
+    "JS"
+   ],
+   [
+    "Rubin",
+    "MR"
+   ],
+   [
+    "Ratamess",
+    "NA"
+   ],
+   [
+    "Sharman",
+    "MJ"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2004,
+  "title": "Longitudinal Tracking of Muscular Power Changes of NCAA Division I Collegiate Women Gymnasts",
+  "journal": "Journal of Strength and Conditioning Research",
+  "volume": "18",
+  "fpage": "101",
+  "lpage": "7",
+  "doi": "10.1519/1533-4287(2004)018<0101:ltompc>2.0.co;2",
+  "from": "PMC6894803"
+ },
+ {
+  "authors": [
+   [
+    "Alió",
+    "J.L."
+   ],
+   [
+    "Abdou",
+    "A.A."
+   ],
+   [
+    "Soria",
+    "F."
+   ],
+   [
+    "Javaloy",
+    "J."
+   ],
+   [
+    "Fernández-Buenaga",
+    "R."
+   ],
+   [
+    "Nagy",
+    "Z.Z."
+   ],
+   [
+    "Filkorn",
+    "T."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2013,
+  "title": "Femtosecond laser cataract incision morphology and corneal higher-order aberration analysis",
+  "journal": "J. Refract. Surg.",
+  "volume": "29",
+  "fpage": "590",
+  "lpage": "595",
+  "doi": "10.3928/1081597X-20130819-01",
+  "from": "PMC5492121"
+ },
+ {
+  "authors": [
+   [
+    "Naranjo-Tackman",
+    "R."
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2011,
+  "title": "How a femtosecond laser increases safety and precision in cataract surgery?",
+  "journal": "Curr. Opin. Ophthalmol.",
+  "volume": "22",
+  "fpage": "53",
+  "lpage": "57",
+  "doi": "10.1097/ICU.0b013e3283415026",
+  "from": "PMC5492121"
+ },
+ {
+  "authors": [
+   [
+    "Balistreri",
+    "W. F."
+   ],
+   [
+    "Bezerra",
+    "J. A."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2006,
+  "title": "Whatever happened to ‘neonatal hepatitis’?",
+  "journal": "Clinics in Liver Disease",
+  "volume": "10",
+  "fpage": "27",
+  "lpage": "53",
+  "doi": "10.1016/j.cld.2005.10.008",
+  "from": "PMC5116357"
+ },
+ {
+  "authors": [
+   [
+    "Kaufman",
+    "F. R."
+   ],
+   [
+    "Costin",
+    "G."
+   ],
+   [
+    "Thomas",
+    "D. W."
+   ],
+   [
+    "Sinatra",
+    "F. R."
+   ],
+   [
+    "Roe",
+    "T. F."
+   ],
+   [
+    "Neustein",
+    "H. B."
+   ]
+  ],
+  "n_authors": 6,
+  "year": 1984,
+  "title": "Neonatal cholestasis and hypopituitarism",
+  "journal": "Archives of Disease in Childhood",
+  "volume": "59",
+  "fpage": "787",
+  "lpage": "789",
+  "doi": "10.1136/adc.59.8.787",
+  "from": "PMC5116357"
+ },
+ {
+  "authors": [
+   [
+    "Wilson",
+    "EO"
+   ],
+   [
+    "Durlach",
+    "NI"
+   ],
+   [
+    "Roth",
+    "LM"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 1958,
+  "title": "Chemical releasers of necrophoric behavior in ants",
+  "journal": "Psyche",
+  "volume": "65",
+  "fpage": "108",
+  "lpage": "114",
+  "doi": "10.1155/1958/69391",
+  "from": "PMC6584651"
+ },
+ {
+  "authors": [
+   [
+    "Ferreira-Caliman",
+    "M"
+   ],
+   [
+    "Turatti",
+    "I"
+   ],
+   [
+    "Lopes",
+    "N"
+   ],
+   [
+    "Zucchi",
+    "R"
+   ],
+   [
+    "Nascimento",
+    "F"
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2012,
+  "title": "Analysis of insect cuticular compounds by non-lethal solid phase micro extraction with styrene-divinylbenzene copolymers",
+  "journal": "Journal of Chemical Ecology",
+  "volume": "38",
+  "fpage": "418",
+  "lpage": "426",
+  "doi": "10.1007/s10886-012-0109-7",
+  "from": "PMC6584651"
+ },
+ {
+  "authors": [
+   [
+    "Nicolini",
+    "G"
+   ],
+   [
+    "Clivio",
+    "A"
+   ],
+   [
+    "Fogliata",
+    "A"
+   ],
+   [
+    "Vanetti",
+    "E"
+   ],
+   [
+    "Cozzi",
+    "L"
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2009,
+  "title": "Simultaneous integrated boost radiotherapy for bilateral breast: a treatment planning and dosimetric comparison for volumetric modulated arc and fixed field intensity modulated therapy",
+  "journal": "Radiat Oncol",
+  "volume": "4",
+  "fpage": "27",
+  "lpage": "",
+  "doi": "10.1186/1748-717X-4-27",
+  "from": "PMC5027088"
+ },
+ {
+  "authors": [
+   [
+    "Nicolini",
+    "G"
+   ],
+   [
+    "Fogliata",
+    "A"
+   ],
+   [
+    "Clivio",
+    "A"
+   ],
+   [
+    "Vanetti",
+    "E"
+   ],
+   [
+    "Cozzi",
+    "L"
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2011,
+  "title": "Planning strategies in volumetric modulated are therapy for breast",
+  "journal": "Med Phys",
+  "volume": "38",
+  "fpage": "4025",
+  "lpage": "4031",
+  "doi": "10.1118/1.3598442",
+  "from": "PMC5027088"
+ },
+ {
+  "authors": [
+   [
+    "Tambourgi",
+    "D.V."
+   ],
+   [
+    "Paixão-Cavalcante",
+    "D."
+   ],
+   [
+    "Gonçalves-de-Andrade",
+    "R.M."
+   ],
+   [
+    "Fernandes-Pedrosa",
+    "M."
+   ],
+   [
+    "Magnoli",
+    "F.C."
+   ],
+   [
+    "Morgan",
+    "B.P."
+   ],
+   [
+    "van den Berg",
+    "C.W."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2005,
+  "title": "Loxosceles sphingomielinase induces complement-dependent dermonecrosis, neutrophil infiltration and endogenous gelatinase expression",
+  "journal": "J. Investig. Dermatol.",
+  "volume": "124",
+  "fpage": "725",
+  "lpage": "731",
+  "doi": "10.1111/j.0022-202X.2005.23654.x",
+  "from": "PMC5371845"
+ },
+ {
+  "authors": [
+   [
+    "Nee",
+    "L.E."
+   ],
+   [
+    "McMorrow",
+    "T."
+   ],
+   [
+    "Campbell",
+    "E."
+   ],
+   [
+    "Slattery",
+    "C."
+   ],
+   [
+    "Ryan",
+    "M.P."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2004,
+  "title": "TNF-alpha and IL-1 beta-mediated regulation of MMP-9 and TIMP-1 in renal proximal tubular cells",
+  "journal": "Kidney Int.",
+  "volume": "66",
+  "fpage": "1376",
+  "lpage": "1386",
+  "doi": "10.1111/j.1523-1755.2004.00900.x",
+  "from": "PMC5371845"
+ },
+ {
+  "authors": [
+   [
+    "Servadei",
+    "F"
+   ],
+   [
+    "Begliomini",
+    "C"
+   ],
+   [
+    "Gardini",
+    "E"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2003,
+  "title": "Effect of Italy’s motorcycle helmet law on traumatic brain injuries",
+  "journal": "Inj Prev",
+  "volume": "9",
+  "fpage": "257",
+  "lpage": "60",
+  "doi": "10.1136/ip.9.3.257",
+  "from": "PMC5695412"
+ },
+ {
+  "authors": [
+   [
+    "Wood",
+    "JM"
+   ],
+   [
+    "Tyrrell",
+    "RA"
+   ],
+   [
+    "Marszalek",
+    "R"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2013,
+  "title": "Bicyclists overestimate their own night-time conspicuity and underestimate the benefits of retroreflective markers on the moveable joints",
+  "journal": "Accid Anal Prev",
+  "volume": "55",
+  "fpage": "48",
+  "lpage": "53",
+  "doi": "10.1016/j.aap.2013.02.033",
+  "from": "PMC5695412"
+ },
+ {
+  "authors": [
+   [
+    "Barbe",
+    "F"
+   ],
+   [
+    "Duran-Cantolla",
+    "J"
+   ],
+   [
+    "Sanchez-de-la-Torre",
+    "M"
+   ],
+   [
+    "Martinez-Alonso",
+    "M"
+   ],
+   [
+    "Carmona",
+    "C"
+   ],
+   [
+    "Barcelo",
+    "A"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2012,
+  "title": "Effect of continuous positive airway pressure on the incidence of hypertension and cardiovascular events in nonsleepy patients with obstructive sleep apnea: a randomized controlled trial",
+  "journal": "JAMA",
+  "volume": "307",
+  "fpage": "2161",
+  "lpage": "8",
+  "doi": "10.1001/jama.2012.4366",
+  "from": "PMC6282364"
+ },
+ {
+  "authors": [
+   [
+    "Shaw",
+    "JE"
+   ],
+   [
+    "Punjabi",
+    "NM"
+   ],
+   [
+    "Naughton",
+    "MT"
+   ],
+   [
+    "Willes",
+    "L"
+   ],
+   [
+    "Bergenstal",
+    "RM"
+   ],
+   [
+    "Cistulli",
+    "PA"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2016,
+  "title": "The effect of treatment of obstructive sleep apnea on glycemic control in type 2 diabetes",
+  "journal": "Am J Respir Crit Care Med.",
+  "volume": "194",
+  "fpage": "486",
+  "lpage": "92",
+  "doi": "10.1164/rccm.201511-2260OC",
+  "from": "PMC6282364"
+ },
+ {
+  "authors": [
+   [
+    "Barile",
+    "GR"
+   ],
+   [
+    "Pachydaki",
+    "SI"
+   ],
+   [
+    "Tari",
+    "SR"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2005,
+  "title": "The RAGE axis in early diabetic retinopathy",
+  "journal": "Invest Ophthalmol Vis Sci",
+  "volume": "46",
+  "fpage": "2916",
+  "lpage": "2924",
+  "doi": "10.1167/iovs.04-1409",
+  "from": "PMC6509079"
+ },
+ {
+  "authors": [
+   [
+    "Chang",
+    "YP"
+   ],
+   [
+    "Sun",
+    "B"
+   ],
+   [
+    "Han",
+    "Z"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2017,
+  "title": "Saxagliptin attenuates albuminuria by inhibiting podocyte epithelial- to-mesenchymal transition via SDF-1α in diabetic nephropathy",
+  "journal": "Front Pharmacol",
+  "volume": "8",
+  "fpage": "780",
+  "lpage": "",
+  "doi": "10.3389/fphar.2017.00780",
+  "from": "PMC6509079"
+ },
+ {
+  "authors": [
+   [
+    "Doolittle",
+    "W. F."
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2013,
+  "title": "Is junk DNA bunk? A critique of ENCODE",
+  "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+  "volume": "110",
+  "fpage": "5294",
+  "lpage": "5300",
+  "doi": "10.1073/pnas.1221376110",
+  "from": "PMC4306305"
+ },
+ {
+  "authors": [
+   [
+    "Ingolia",
+    "N. T."
+   ],
+   [
+    "Lareau",
+    "L. F."
+   ],
+   [
+    "Weissman",
+    "J. S."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2011,
+  "title": "Ribosome profiling of mouse embryonic stem cells reveals the complexity and dynamics of mammalian proteomes",
+  "journal": "Cell",
+  "volume": "147",
+  "fpage": "789",
+  "lpage": "802",
+  "doi": "10.1016/j.cell.2011.10.002",
+  "from": "PMC4306305"
+ },
+ {
+  "authors": [
+   [
+    "Mahfoud",
+    "F"
+   ],
+   [
+    "Luscher",
+    "TF"
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2015,
+  "title": "Renal denervation: symply trapped by complexity?",
+  "journal": "Eur Heart J",
+  "volume": "36",
+  "fpage": "199",
+  "lpage": "202",
+  "doi": "10.1093/eurheartj/ehu450",
+  "from": "PMC5467056"
+ },
+ {
+  "authors": [
+   [
+    "Maruvada",
+    "S"
+   ],
+   [
+    "Harris",
+    "GR"
+   ],
+   [
+    "Herman",
+    "BA"
+   ],
+   [
+    "King",
+    "RL"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2007,
+  "title": "Acoustic power calibration of high-intensity focused ultrasound transducers using a radiation force technique",
+  "journal": "J Acoust Soc Am",
+  "volume": "121",
+  "fpage": "1434",
+  "lpage": "1439",
+  "doi": "10.1121/1.2431332",
+  "from": "PMC5467056"
+ },
+ {
+  "authors": [
+   [
+    "Kimura",
+    "I."
+   ],
+   [
+    "Ozawa",
+    "K."
+   ],
+   [
+    "Inoue",
+    "D."
+   ],
+   [
+    "Imamura",
+    "T."
+   ],
+   [
+    "Kimura",
+    "K."
+   ],
+   [
+    "Maeda",
+    "T."
+   ],
+   [
+    "Terasawa",
+    "K."
+   ],
+   [
+    "Kashihara",
+    "D."
+   ]
+  ],
+  "n_authors": 10,
+  "year": 2013,
+  "title": "The gut microbiota suppresses insulin-mediated fat accumulation via the short-chain fatty acid receptor GPR43",
+  "journal": "Nat. Commun.",
+  "volume": "4",
+  "fpage": "1829",
+  "lpage": "",
+  "doi": "10.1038/ncomms2852",
+  "from": "PMC7073211"
+ },
+ {
+  "authors": [
+   [
+    "Ma",
+    "L."
+   ],
+   [
+    "Zheng",
+    "J."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2018,
+  "title": "Single-cell gene expression analysis reveals β-cell dysfunction and deficit mechanisms in type 2 diabetes",
+  "journal": "BMC Bioinform.",
+  "volume": "19",
+  "fpage": "",
+  "lpage": "",
+  "doi": "10.1186/s12859-018-2519-1",
+  "from": "PMC7073211"
+ },
+ {
+  "authors": [
+   [
+    "Owens",
+    "M."
+   ],
+   [
+    "Koster",
+    "E. H."
+   ],
+   [
+    "Derakshan",
+    "N."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2013,
+  "title": "Improving attention control in dysphoria through cognitive training: transfer effects on working memory capacity and filtering efficiency",
+  "journal": "Psychophysiology",
+  "volume": "50",
+  "fpage": "297",
+  "lpage": "307",
+  "doi": "10.1111/psyp.12010",
+  "from": "PMC7432129"
+ },
+ {
+  "authors": [
+   [
+    "Hirsch",
+    "C. R."
+   ],
+   [
+    "Mathews",
+    "A."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2012,
+  "title": "A cognitive model of pathological worry",
+  "journal": "Behav. Res. Ther.",
+  "volume": "50",
+  "fpage": "636",
+  "lpage": "646",
+  "doi": "10.1016/j.brat.2012.06.007",
+  "from": "PMC7432129"
+ },
+ {
+  "authors": [
+   [
+    "Yu",
+    "Z.W."
+   ],
+   [
+    "Zhou",
+    "Y.H."
+   ],
+   [
+    "Wang",
+    "X.B."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2013,
+  "title": "Three-intensity decoy-state method for measurement-device-independent quantum key distribution",
+  "journal": "Phys. Rev. A",
+  "volume": "88",
+  "fpage": "062339",
+  "lpage": "",
+  "doi": "10.1103/PhysRevA.88.062339",
+  "from": "PMC8467927"
+ },
+ {
+  "authors": [
+   [
+    "Buttler",
+    "W.T."
+   ],
+   [
+    "Hughes",
+    "R.J."
+   ],
+   [
+    "Kwiat",
+    "P.G."
+   ],
+   [
+    "Lamoreaux",
+    "S.K."
+   ],
+   [
+    "Simmons",
+    "C.M."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 1998,
+  "title": "Practical free-space quantum key distribution over 1 km",
+  "journal": "Phys. Rev. Lett.",
+  "volume": "81",
+  "fpage": "3283",
+  "lpage": "3286",
+  "doi": "10.1103/PhysRevLett.81.3283",
+  "from": "PMC8467927"
+ },
+ {
+  "authors": [
+   [
+    "Bader",
+    "O"
+   ],
+   [
+    "Weig",
+    "M"
+   ],
+   [
+    "Reichard",
+    "U"
+   ],
+   [
+    "Lugert",
+    "R"
+   ],
+   [
+    "Kuhns",
+    "M"
+   ],
+   [
+    "Christner",
+    "M"
+   ],
+   [
+    "Held",
+    "J"
+   ],
+   [
+    "Peter",
+    "S"
+   ]
+  ],
+  "n_authors": 10,
+  "year": 2013,
+  "title": "cyp51A-based mechanisms of Aspergillus fumigatus azole drug resistance present in clinical samples from Germany",
+  "journal": "Antimicrob Agents Chemother",
+  "volume": "57",
+  "fpage": "3513",
+  "lpage": "3517",
+  "doi": "10.1128/AAC.00167-13",
+  "from": "PMC5009654"
+ },
+ {
+  "authors": [
+   [
+    "Engelhart",
+    "S"
+   ],
+   [
+    "Loock",
+    "A"
+   ],
+   [
+    "Skutlarek",
+    "D"
+   ],
+   [
+    "Sagunski",
+    "H"
+   ],
+   [
+    "Lommel",
+    "A"
+   ],
+   [
+    "Färber",
+    "H"
+   ],
+   [
+    "Exner",
+    "M"
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2002,
+  "title": "Occurrence of toxigenic Aspergillus versicolor isolates and sterigmatocystin in carpet dust from damp indoor environments",
+  "journal": "Appl Environ Microbiol",
+  "volume": "68",
+  "fpage": "3886",
+  "lpage": "3890",
+  "doi": "10.1128/AEM.68.8.3886-3890.2002",
+  "from": "PMC5009654"
+ },
+ {
+  "authors": [
+   [
+    "Azimi",
+    "I."
+   ],
+   [
+    "Anzanpour",
+    "A."
+   ],
+   [
+    "Rahmani",
+    "A.M."
+   ],
+   [
+    "Pahikkala",
+    "T."
+   ],
+   [
+    "Levorato",
+    "M."
+   ],
+   [
+    "Liljeberg",
+    "P."
+   ],
+   [
+    "Dutt",
+    "N."
+   ]
+  ],
+  "n_authors": 7,
+  "year": 2017,
+  "title": "HiCH: Hierarchical Fog-Assisted Computing Architecture for Healthcare IoT",
+  "journal": "ACM Trans. Embed. Comput. Syst.",
+  "volume": "16",
+  "fpage": "174",
+  "lpage": "",
+  "doi": "10.1145/3126501",
+  "from": "PMC6359622"
+ },
+ {
+  "authors": [
+   [
+    "Vaquero",
+    "L.M."
+   ],
+   [
+    "Cuadrado",
+    "F."
+   ],
+   [
+    "Elkhatib",
+    "Y."
+   ],
+   [
+    "Bernal-Bernabe",
+    "J."
+   ],
+   [
+    "Srirama",
+    "S.N."
+   ],
+   [
+    "Zhani",
+    "M.F."
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2019,
+  "title": "Research challenges in nextgen service orchestration",
+  "journal": "Future Gener. Comput. Syst.",
+  "volume": "90",
+  "fpage": "20",
+  "lpage": "38",
+  "doi": "10.1016/j.future.2018.07.039",
+  "from": "PMC6359622"
+ },
+ {
+  "authors": [
+   [
+    "deVeber",
+    "GA"
+   ],
+   [
+    "Kirton",
+    "A"
+   ],
+   [
+    "Booth",
+    "FA"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2017,
+  "title": "Epidemiology and outcomes of arterial ischemic stroke in children: the Canadian pediatric ischemic stroke registry",
+  "journal": "Pediatr Neurol",
+  "volume": "69",
+  "fpage": "58",
+  "lpage": "70",
+  "doi": "10.1016/j.pediatrneurol.2017.01.016",
+  "from": "PMC6047140"
+ },
+ {
+  "authors": [
+   [
+    "Statnikov",
+    "Y"
+   ],
+   [
+    "Ibrahim",
+    "B"
+   ],
+   [
+    "Modi",
+    "N"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2017,
+  "title": "A systematic review of administrative and clinical databases of infants admitted to neonatal units",
+  "journal": "Arch Dis Child Fetal Neonatal Ed",
+  "volume": "102",
+  "fpage": "F270",
+  "lpage": "6",
+  "doi": "10.1136/archdischild-2016-312010",
+  "from": "PMC6047140"
+ },
+ {
+  "authors": [
+   [
+    "Chang",
+    "N.J."
+   ],
+   [
+    "Lin",
+    "C.C."
+   ],
+   [
+    "Li",
+    "C.F."
+   ],
+   [
+    "Su",
+    "K."
+   ],
+   [
+    "Yeh",
+    "M.L."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2013,
+  "title": "The effect of osteochondral regeneration using polymer constructs and continuous passive motion therapy in the lower weight-bearing zone of femoral trocheal groove in rabbits",
+  "journal": "Ann. Biomed. Eng.",
+  "volume": "41",
+  "fpage": "385",
+  "lpage": "397",
+  "doi": "10.1007/s10439-012-0656-7",
+  "from": "PMC6358980"
+ },
+ {
+  "authors": [
+   [
+    "Amini",
+    "A.R."
+   ],
+   [
+    "Laurencin",
+    "C.T."
+   ],
+   [
+    "Nukavarapu",
+    "S.P."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2012,
+  "title": "Differential analysis of peripheral blood- and bone marrow-derived endothelial progenitor cells for enhanced vascularization in bone tissue engineering",
+  "journal": "J. Orthop. Res.",
+  "volume": "30",
+  "fpage": "1507",
+  "lpage": "1515",
+  "doi": "10.1002/jor.22097",
+  "from": "PMC6358980"
+ },
+ {
+  "authors": [
+   [
+    "Elhanati",
+    "Y"
+   ],
+   [
+    "Sethna",
+    "Z"
+   ],
+   [
+    "Marcou",
+    "Q"
+   ],
+   [
+    "Callan",
+    "CG"
+   ],
+   [
+    "Mora",
+    "T"
+   ],
+   [
+    "Walczak",
+    "AM"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2015,
+  "title": "Inferring processes underlying B-cell repertoire diversity",
+  "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+  "volume": "370",
+  "fpage": "20140243",
+  "lpage": "",
+  "doi": "10.1098/rstb.2014.0243",
+  "from": "PMC5268739"
+ },
+ {
+  "authors": [
+   [
+    "Foat",
+    "BC"
+   ],
+   [
+    "Morozov",
+    "AV"
+   ],
+   [
+    "Bussemaker",
+    "HJ"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2006,
+  "title": "Statistical mechanical modeling of genome-wide transcription factor occupancy data by MatrixREDUCE",
+  "journal": "Bioinformatics",
+  "volume": "22",
+  "fpage": "e141",
+  "lpage": "e149",
+  "doi": "10.1093/bioinformatics/btl223",
+  "from": "PMC5268739"
+ },
+ {
+  "authors": [
+   [
+    "Seufferlein",
+    "T."
+   ],
+   [
+    "Bachet",
+    "J.B."
+   ],
+   [
+    "van Cutsem",
+    "E."
+   ],
+   [
+    "Rougier",
+    "P."
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2012,
+  "title": "Pancreatic adenocarcinoma: ESMO–ESDO clinical practice guidelines for diagnosis, treatment and follow-up",
+  "journal": "Ann. Oncol.",
+  "volume": "23",
+  "fpage": "vii33",
+  "lpage": "vii40",
+  "doi": "10.1093/annonc/mds224",
+  "from": "PMC4346875"
+ },
+ {
+  "authors": [
+   [
+    "Lenhard",
+    "M."
+   ],
+   [
+    "Stieber",
+    "P."
+   ],
+   [
+    "Hertlein",
+    "L."
+   ],
+   [
+    "Kirschenhofer",
+    "A."
+   ],
+   [
+    "Furst",
+    "S."
+   ],
+   [
+    "Mayr",
+    "D."
+   ],
+   [
+    "Nagel",
+    "D."
+   ],
+   [
+    "Hofmann",
+    "K."
+   ]
+  ],
+  "n_authors": 10,
+  "year": 2011,
+  "title": "The diagnostic accuracy of two human epididymis protein 4 (HE4) testing systems in combination with CA125 in the differential diagnosis of ovarian masses",
+  "journal": "Clin. Chem. Lab. Med.",
+  "volume": "49",
+  "fpage": "2081",
+  "lpage": "2088",
+  "doi": "10.1515/CCLM.2011.709",
+  "from": "PMC4346875"
+ },
+ {
+  "authors": [
+   [
+    "Froyen",
+    "G"
+   ],
+   [
+    "Van Esch",
+    "H"
+   ],
+   [
+    "Bauters",
+    "M"
+   ],
+   [
+    "Hollanders",
+    "K"
+   ],
+   [
+    "Frints",
+    "SG"
+   ],
+   [
+    "Vermeesch",
+    "JR"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2007,
+  "title": "Detection of genomic copy number changes in patients with idiopathic mental retardation by High-Resolution X-Array-CGH: important role for increased gene dosage of XLMR genes",
+  "journal": "Hum Mut",
+  "volume": "28",
+  "fpage": "1042",
+  "lpage": "3",
+  "doi": "10.1002/humu.20564",
+  "from": "PMC4422130"
+ },
+ {
+  "authors": [
+   [
+    "Giannandrea",
+    "M"
+   ],
+   [
+    "Bianchi",
+    "V"
+   ],
+   [
+    "Mignogna",
+    "ML"
+   ],
+   [
+    "Sirri",
+    "A"
+   ],
+   [
+    "Carrabino",
+    "S"
+   ],
+   [
+    "D'Elia",
+    "E"
+   ]
+  ],
+  "n_authors": 6,
+  "year": 2010,
+  "title": "Mutations in the small GTPase gene RAB39B are responsible for X linked mental retardation associated with autism, epilepsy, and macrocephaly",
+  "journal": "Am J Hum Genet",
+  "volume": "86",
+  "fpage": "185",
+  "lpage": "95",
+  "doi": "10.1016/j.ajhg.2010.01.011",
+  "from": "PMC4422130"
+ },
+ {
+  "authors": [
+   [
+    "Stefanski",
+    "J. C."
+   ],
+   [
+    "Shetty",
+    "A. K."
+   ],
+   [
+    "Gedalia",
+    "A."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 1998,
+  "title": "Abdominal pain in a girl with juvenile dermatomyositis",
+  "journal": "Clinical Pediatrics",
+  "volume": "37",
+  "fpage": "561",
+  "lpage": "564",
+  "doi": "10.1177/000992289803700907",
+  "from": "PMC4875981"
+ },
+ {
+  "authors": [
+   [
+    "Huber",
+    "A. M."
+   ],
+   [
+    "Dugan",
+    "E. M."
+   ],
+   [
+    "Lachenbruch",
+    "P. A."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2007,
+  "title": "The cutaneous assessment tool: development and reliability in juvenile idiopathic inflammatory myopathy",
+  "journal": "Rheumatology",
+  "volume": "46",
+  "fpage": "1606",
+  "lpage": "1611",
+  "doi": "10.1093/rheumatology/kem179",
+  "from": "PMC4875981"
+ },
+ {
+  "authors": [
+   [
+    "Otsuka",
+    "Y."
+   ],
+   [
+    "Ito",
+    "A."
+   ],
+   [
+    "Takeuchi",
+    "M."
+   ],
+   [
+    "Sasaki",
+    "T."
+   ],
+   [
+    "Tanaka",
+    "H."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2020,
+  "title": "Effects of temperature on terahertz spectra of caffeine/oxalic acid 2:1 cocrystal and its solid-state density functional theory",
+  "journal": "J. Drug Delivery Sci. Technol.",
+  "volume": "56",
+  "fpage": "",
+  "lpage": "",
+  "doi": "10.1016/j.jddst.2019.101215",
+  "from": "PMC9558605"
+ },
+ {
+  "authors": [
+   [
+    "Du",
+    "C."
+   ],
+   [
+    "Zhang",
+    "X."
+   ],
+   [
+    "Zhang",
+    "Z."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2019,
+  "title": "Quantitative analysis of ternary isomer mixtures of saccharide by terahertz time domain spectroscopy combined with chemometrics",
+  "journal": "Vib. Spectrosc.",
+  "volume": "100",
+  "fpage": "64",
+  "lpage": "70",
+  "doi": "10.1016/j.vibspec.2018.11.003",
+  "from": "PMC9558605"
+ },
+ {
+  "authors": [
+   [
+    "Hedges",
+    "SB"
+   ],
+   [
+    "Duellman",
+    "WE"
+   ],
+   [
+    "Heinicke",
+    "MP"
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2008,
+  "title": "New World direct-developing frogs (Anura: Terrarana): molecular phylogeny, classification, biogeography, and conservation",
+  "journal": "Zootaxa",
+  "volume": "1737",
+  "fpage": "1",
+  "lpage": "182",
+  "doi": "10.11646/zootaxa.3986.2.1",
+  "from": "PMC6658573"
+ },
+ {
+  "authors": [
+   [
+    "Watters",
+    "JL"
+   ],
+   [
+    "Cummings",
+    "ST"
+   ],
+   [
+    "Flanagan",
+    "RL"
+   ],
+   [
+    "Siler",
+    "CD"
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2016,
+  "title": "Review of morphometric measurements used in anuran species descriptions and recommendations for a standardized approach",
+  "journal": "Zootaxa",
+  "volume": "4072",
+  "fpage": "477",
+  "lpage": "495",
+  "doi": "10.11646/zootaxa.4072.4.6",
+  "from": "PMC6658573"
+ },
+ {
+  "authors": [
+   [
+    "Ardelli",
+    "BF"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2013,
+  "title": "Transport proteins of the ABC systems superfamily and their role in drug action and resistance in nematodes",
+  "journal": "Parasitol Int",
+  "volume": "62",
+  "fpage": "639",
+  "lpage": "46",
+  "doi": "10.1016/j.parint.2013.02.008",
+  "from": "PMC4415803"
+ },
+ {
+  "authors": [
+   [
+    "Hernando",
+    "G"
+   ],
+   [
+    "Bouzat",
+    "C"
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2014,
+  "title": "Caenorhabditis elegans neuromuscular junction: GABA receptors and ivermectin action",
+  "journal": "PLoS One",
+  "volume": "9",
+  "fpage": "e95072",
+  "lpage": "",
+  "doi": "10.1371/journal.pone.0095072",
+  "from": "PMC4415803"
+ },
+ {
+  "authors": [
+   [
+    "Chen",
+    "J.S."
+   ],
+   [
+    "Zhou",
+    "Y.Z."
+   ],
+   [
+    "Sun",
+    "C.J."
+   ],
+   [
+    "Han",
+    "S.W."
+   ],
+   [
+    "Chow",
+    "G.M."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2011,
+  "title": "Where is the Ag in FePt-Ag composited films?",
+  "journal": "Appl. Phys. Lett.",
+  "volume": "98",
+  "fpage": "131914:1",
+  "lpage": "131914:3",
+  "doi": "10.1063/1.3574538",
+  "from": "PMC5456664"
+ },
+ {
+  "authors": [
+   [
+    "Coffey",
+    "K.R."
+   ],
+   [
+    "Thomson",
+    "T."
+   ],
+   [
+    "Thiele",
+    "J.U."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2003,
+  "title": "Angle dependent magnetization reversal of thin film magnetic recording media",
+  "journal": "J. Appl. Phys.",
+  "volume": "93",
+  "fpage": "8471",
+  "lpage": "8473",
+  "doi": "10.1063/1.1540167",
+  "from": "PMC5456664"
+ },
+ {
+  "authors": [
+   [
+    "Jeong",
+    "J.-H."
+   ],
+   [
+    "Eom",
+    "J."
+   ],
+   [
+    "Lee",
+    "S.S."
+   ],
+   [
+    "Lim",
+    "D.W."
+   ],
+   [
+    "Jang",
+    "Y.I."
+   ],
+   [
+    "Seo",
+    "K.W."
+   ],
+   [
+    "Choi",
+    "S.S."
+   ],
+   [
+    "Lee",
+    "C.J."
+   ]
+  ],
+  "n_authors": 9,
+  "year": 2018,
+  "title": "Miniature mechanical safety and arming device with runaway escapement arming delay mechanism for artillery fuze",
+  "journal": "Sen. Actuators A",
+  "volume": "279",
+  "fpage": "518",
+  "lpage": "524",
+  "doi": "10.1016/j.sna.2018.05.040",
+  "from": "PMC6412507"
+ },
+ {
+  "authors": [
+   [
+    "Eniko",
+    "E.T."
+   ],
+   [
+    "Shantanu",
+    "S.S."
+   ],
+   [
+    "Lazarov",
+    "K.V."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2005,
+  "title": "Analytical Model for Analysis and Design of V-Shaped Thermal Microactuators",
+  "journal": "J. Microelectromech. Syst.",
+  "volume": "14",
+  "fpage": "788",
+  "lpage": "798",
+  "doi": "10.1109/JMEMS.2005.845449",
+  "from": "PMC6412507"
+ },
+ {
+  "authors": [
+   [
+    "Barbé",
+    "F"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2010,
+  "title": "Long-term effect of continuous positive airway pressure in hypertensive patients with sleep apnea",
+  "journal": "Am. J. Respir. Crit. Care Med.",
+  "volume": "181",
+  "fpage": "718",
+  "lpage": "726",
+  "doi": "10.1164/rccm.200901-0050OC",
+  "from": "PMC5434786"
+ },
+ {
+  "authors": [
+   [
+    "Masa",
+    "JF"
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2004,
+  "title": "Alternative methods of titrating continuous positive airway pressure: a large multicenter study",
+  "journal": "Am. J. Respir. Crit. Care Med.",
+  "volume": "170",
+  "fpage": "1218",
+  "lpage": "1224",
+  "doi": "10.1164/rccm.200312-1787OC",
+  "from": "PMC5434786"
+ },
+ {
+  "authors": [
+   [
+    "Delgado",
+    "B."
+   ],
+   [
+    "Fernandez",
+    "P.S."
+   ],
+   [
+    "Palop",
+    "A."
+   ],
+   [
+    "Periago",
+    "P.M."
+   ]
+  ],
+  "n_authors": 4,
+  "year": 2004,
+  "title": "Effect of thymol and cymene on Bacillus cereus vegetative cells evaluated through the use of frequency distributions",
+  "journal": "Food Microbiol.",
+  "volume": "21",
+  "fpage": "327",
+  "lpage": "334",
+  "doi": "10.1016/S0740-0020(03)00075-3",
+  "from": "PMC5622401"
+ },
+ {
+  "authors": [
+   [
+    "Kotan",
+    "R."
+   ],
+   [
+    "Kordali",
+    "S."
+   ],
+   [
+    "Cakir",
+    "A."
+   ]
+  ],
+  "n_authors": 3,
+  "year": 2007,
+  "title": "Screening of antibacterial activities of twenty-one oxygenated monoterpenes",
+  "journal": "Z. Naturforsch.",
+  "volume": "62c",
+  "fpage": "507",
+  "lpage": "513",
+  "doi": "10.1515/znc-2007-7-808",
+  "from": "PMC5622401"
+ },
+ {
+  "authors": [
+   [
+    "Bennett",
+    "G."
+   ],
+   [
+    "Earlé",
+    "R."
+   ],
+   [
+    "Peirce",
+    "M."
+   ],
+   [
+    "Nandi",
+    "N."
+   ]
+  ],
+  "n_authors": 4,
+  "year": 1993,
+  "title": "The Leucocytozoidae of South African birds. The coliiformes and coraciiformes",
+  "journal": "Afr. Zool.",
+  "volume": "28",
+  "fpage": "74",
+  "lpage": "80",
+  "doi": "10.1080/02541858.1993.11448296",
+  "from": "PMC6526250"
+ },
+ {
+  "authors": [
+   [
+    "Ortego",
+    "J."
+   ],
+   [
+    "Cordero",
+    "P.J."
+   ]
+  ],
+  "n_authors": 2,
+  "year": 2009,
+  "title": "PCR-based detection and genotyping of haematozoa (Protozoa) parasitizing eagle owls, Bubo bubo",
+  "journal": "Parasitol. Res.",
+  "volume": "104",
+  "fpage": "467",
+  "lpage": "470",
+  "doi": "10.1007/s00436-008-1207-x",
+  "from": "PMC6526250"
+ },
+ {
+  "authors": [
+   [
+    "Lagana",
+    "A.S."
+   ]
+  ],
+  "n_authors": 1,
+  "year": 2017,
+  "title": "Unus pro omnibus, omnes pro uno: a novel, evidence-based, unifying theory for the pathogenesis of endometriosis",
+  "journal": "Med. Hypotheses",
+  "volume": "103",
+  "fpage": "10",
+  "lpage": "20",
+  "doi": "10.1016/j.mehy.2017.03.032",
+  "from": "PMC6558724"
+ },
+ {
+  "authors": [
+   [
+    "Liu",
+    "J."
+   ],
+   [
+    "Wu",
+    "Y."
+   ],
+   [
+    "Wang",
+    "B."
+   ],
+   [
+    "Yuan",
+    "X."
+   ],
+   [
+    "Fang",
+    "B."
+   ]
+  ],
+  "n_authors": 5,
+  "year": 2013,
+  "title": "High levels of glucose induced the caspase-3/PARP signaling pathway, leading to apoptosis in human periodontal ligament fibroblasts",
+  "journal": "Cell Biochem. Biophys.",
+  "volume": "66",
+  "fpage": "229",
+  "lpage": "237",
+  "doi": "10.1007/s12013-012-9470-y",
+  "from": "PMC6558724"
+ }
+]

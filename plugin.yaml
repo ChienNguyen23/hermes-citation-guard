@@ -1,0 +1,39 @@
+name: citation-guard
+version: "0.1.0"
+manifest_version: 2
+api_version: 1
+description: "Catches fabricated, mismatched and retracted references before you rely on them. Checks every DOI / PMID / arXiv id and every full reference entry against doi.org, Crossref, PubMed and arXiv; flags ids that do not exist, ids that point to a different paper, wrong year or first author, works not found in any registry, and retractions (Crossref notices incl. Retraction Watch). Adds a verify_citations tool, a /citecheck command for manuscripts (.md .txt .bib .docx), and a reply guard that appends a warning footer when the agent's own answer cites something that does not check out. Deterministic, no LLM calls, no API keys, stdlib only."
+author: "Chien Nguyen"
+license: MIT
+homepage: https://github.com/ChienNguyen23/hermes-citation-guard
+requires_hermes: ">=0.22.0"
+tags: [research, citations, academic, fact-checking, hallucination, retraction, doi, pubmed]
+provides_tools:
+  - verify_citations
+provides_hooks:
+  - transform_llm_output
+config_schema:
+  guard_replies:
+    type: bool
+    default: true
+    description: "Check references in every final reply and append a warning footer when one fails."
+  announce_clean:
+    type: bool
+    default: false
+    description: "Also append a one-line note when every reference in a reply was verified."
+  guard_timeout_s:
+    type: int
+    default: 15
+    description: "Time budget (seconds) for checking one reply. References not checked in time are reported as not checked."
+  request_timeout_s:
+    type: int
+    default: 8
+    description: "Timeout for a single registry request."
+  max_items:
+    type: int
+    default: 40
+    description: "Maximum references checked per reply or tool call."
+  contact_email:
+    type: str
+    default: ""
+    description: "Optional. Sent to Crossref and NCBI as the polite-pool contact address (their etiquette); used for nothing else."
