@@ -178,6 +178,21 @@ def _read_docx(path: Path) -> str:
     return text
 
 
+def _resolve_user_path(arg: str) -> Path:
+    """A relative path is the caller's: when a gateway serves the chat, the command runs in the
+    gateway process, whose own cwd is not the directory the user typed the command in."""
+    p = Path(os.path.expanduser(arg))
+    if p.is_absolute():
+        return p
+    base = ""
+    try:
+        if _ctx is not None and hasattr(_ctx, "session_cwd"):
+            base = _ctx.session_cwd() or ""
+    except Exception:  # older Hermes or no session: fall back to this process's cwd
+        base = ""
+    return Path(base or os.getcwd()) / p
+
+
 def _handle_command(raw_args: str = "", **_: Any) -> str:
     arg = (raw_args or "").strip()
     if not arg:
@@ -185,7 +200,7 @@ def _handle_command(raw_args: str = "", **_: Any) -> str:
                 "Checks every reference against doi.org, Crossref, PubMed and arXiv.")
     title = "Citation check"
     text = arg
-    candidate = Path(os.path.expanduser(arg.strip("'\"")))
+    candidate = _resolve_user_path(arg.strip("'\""))
     try:
         is_file = len(arg) < 1024 and candidate.is_file()
     except OSError:

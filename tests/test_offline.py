@@ -202,5 +202,23 @@ out = cg._on_llm_output(response_text=bad)
 check("hook: problem -> original kept + footer", bool(out) and out.startswith(bad) and "**Citation Guard**" in out)
 check("hook: never runs twice", cg._on_llm_output(response_text=out) is None)
 
+# ------------------------------------------------------------------ /citecheck path
+class FakeCtx:  # a gateway-served session: its cwd is not this process's cwd
+    def session_cwd(self):
+        return str(HERE)
+
+    def get_config(self, key, default=None):
+        return default
+
+_saved_ctx, cg._ctx = cg._ctx, FakeCtx()
+check("command: relative path resolves against the session cwd",
+      cg._resolve_user_path("fixtures_mixed.md") == HERE / "fixtures_mixed.md")
+check("command: absolute path untouched", cg._resolve_user_path("/tmp/x.md") == Path("/tmp/x.md"))
+report = cg._handle_command("fixtures_mixed.md")
+check("command: relative file from the session cwd is read", "Citation check: fixtures_mixed.md" in report, report[:120])
+cg._ctx = None
+check("command: no ctx falls back to process cwd", cg._resolve_user_path("a.md") == Path.cwd() / "a.md")
+cg._ctx = _saved_ctx
+
 print(f"\n{'OK' if not FAILS else 'FAILED'}: {len(FAILS)} failure(s)")
 sys.exit(1 if FAILS else 0)
