@@ -188,7 +188,16 @@ def _authorish(seg: str) -> bool:
         return False
     short = [p for p in parts if len(p.split()) <= 4]
     initials = [p for p in parts if re.search(r"(?:^|\s)[A-Z](?:\.|\b)|\b[A-Z]{2,3}$", p)]
-    return len(short) >= 0.8 * len(parts) and len(initials) >= 0.5 * len(parts)
+    if len(short) >= 0.8 * len(parts) and len(initials) >= 0.5 * len(parts):
+        return True
+    # full names without initials: "Ken Hayashi, Koichi Yoshimura, Hiroyuki Kondo"
+    return len(parts) >= 2 and all(
+        2 <= len(p.split()) <= 4 and all(w[:1].isupper() and w.lower() not in _NAME_STOP for w in p.split())
+        for p in parts)
+
+
+_NAME_STOP = {"and", "of", "the", "in", "for", "with", "on", "a", "an", "to", "by", "from", "at", "vs",
+              "versus", "after", "among", "during", "between", "via", "under", "over"}
 
 
 def guess_title(entry: str) -> Optional[str]:
@@ -213,6 +222,10 @@ def guess_title(entry: str) -> Optional[str]:
             return segs[0].strip(" .")
     for seg in _segments(e):
         words = seg.split()
+        # "Pan, Y., et al., Proposing re-classification of ...": the title follows "et al.," in the same segment
+        m = re.search(r"\bet\s+al\.?\s*,\s*(.+)$", seg)
+        if m and len(m.group(1).split()) >= 3:
+            return m.group(1).strip(" .")
         if len(words) < 3 or _authorish(seg):
             continue
         digits = sum(ch.isdigit() for ch in seg)
@@ -249,6 +262,10 @@ def guess_first_author(entry: str) -> Optional[str]:
         m = re.search(r"([A-Z][\w'’\-]+)(?=\s+et al|,?\s*\(?(?:19|20)\d{2}\b|,?\s+(?:and|&)\s|,\s+[A-Z])", rest)
         return m.group(1) if m else None
     body = _strip_marker(_strip_markdown(entry))
+    # initials first ("B. I. Alzghoul, ...", "R D G Theakston (1995)"): the surname follows them
+    m = re.match(r"(?:[A-Z]\.\s*|[A-Z]\s+){1,3}([^\W\d_][\w'’\-]{1,})", body, re.U)
+    if m:
+        return m.group(1)
     m = re.match(r"([^\W\d_][\w'’\-]*)", body, re.U)
     if not m:
         return None

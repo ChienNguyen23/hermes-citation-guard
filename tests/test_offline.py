@@ -51,6 +51,19 @@ bold_auth = ("3. **Rajkomar A, Oren E, Chen K, et al.** Scalable and accurate de
              "health records. *NPJ Digital Medicine*. 2018;1:18.")
 check("extract: bold author block -> first author, not a title word",
       ex.guess_first_author(bold_auth) == "Rajkomar", ex.guess_first_author(bold_auth))
+vn_styles = [  # reference styles common in Vietnamese journals
+    ("B. I. Alzghoul, N. A. Abdullah (2015), Pain Management Practices by Nurses. Glob J Health Sci, 8, (6), 154-60.",
+     "Alzghoul", "Pain Management Practices by Nurses"),
+    ("Pan, Y., et al., Proposing re-classification of bile duct cancer and intrahepatic cholangiocarcinoma. "
+     "Eur J Surg Oncol, 2025. 51(10): p. 110380.", "Pan",
+     "Proposing re-classification of bile duct cancer and intrahepatic cholangiocarcinoma"),
+    ("Ken Hayashi Shin-ichi Manabe, Koichi Yoshimura, Hiroyuki Kondo. Corneal endothelial damage after cataract "
+     "surgery in eyes with pseudoexfoliation syndrome. Cataract Refract Surg 2013;39:881-7.", "Ken",
+     "Corneal endothelial damage after cataract surgery in eyes with pseudoexfoliation syndrome"),
+]
+for ref, fa, ti in vn_styles:
+    check(f"extract VN style: author {fa}", ex.guess_first_author(ref) == fa, ex.guess_first_author(ref))
+    check(f"extract VN style: title '{ti[:25]}'", ex.guess_title(ref) == ti, ex.guess_title(ref))
 swap = ("If you want the list strictly on prediction, I can swap #4 for the prospective multi-site validation "
         "of the TREWS early-warning system: Adams, Henry, Sridharan et al. (2022), *Nature Medicine* 28, "
         "1455-1460, DOI [10.1038/s41591-022-01894-0](https://doi.org/10.1038/s41591-022-01894-0).")
