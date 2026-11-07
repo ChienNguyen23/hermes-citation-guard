@@ -1,6 +1,6 @@
 # Benchmark (refs_dev.json): 100 real references × 7 forms = 700 checks
 fake_doi counts id_not_found or wrong_id as correct (an altered DOI can belong to another paper).
-Run 2026-11-07, 1 s total, public API pools (no contact e-mail).
+Run 2026-11-07, re-scored with the current code from the cached registry answers of the 2026-11-06 cold run (1 s; the cold run took about 3 min, public API pools, no contact e-mail).
 
 | Form | Expected | Correct | Unchecked | Other verdicts |
 |---|---|---|---|---|
