@@ -61,6 +61,14 @@ vn_styles = [  # reference styles common in Vietnamese journals
      "surgery in eyes with pseudoexfoliation syndrome. Cataract Refract Surg 2013;39:881-7.", "Ken",
      "Corneal endothelial damage after cataract surgery in eyes with pseudoexfoliation syndrome"),
 ]
+vn_styles += [  # found on the pilot: initials and quoted words inside titles, titles ending in a capital
+    ("McCarthy EF. The toxins of William B. Coley and the treatment of bone and soft-tissue sarcomas. "
+     "Iowa Orthop J. 2006;26:154-8.", "McCarthy",
+     "The toxins of William B. Coley and the treatment of bone and soft-tissue sarcomas"),
+    ("Kroupa J. Definition of “polytrauma” and “polytraumatism”. Acta Chir Orthop Traumatol Cech. 1990;57(4):347-60.",
+     "Kroupa", "Definition of “polytrauma” and “polytraumatism”"),
+    ("Lee A, Kim B. Effects of vitamin D. Am J Clin Nutr. 2010;91(5):1-9.", "Lee", "Effects of vitamin D"),
+]
 for ref, fa, ti in vn_styles:
     check(f"extract VN style: author {fa}", ex.guess_first_author(ref) == fa, ex.guess_first_author(ref))
     check(f"extract VN style: title '{ti[:25]}'", ex.guess_title(ref) == ti, ex.guess_title(ref))
@@ -195,6 +203,10 @@ check("verdict: reference in a sentence, no title, author+year agree -> verified
       r["status"] == "verified", f"{r['status']} {r['issues']}")
 r = status_of("If useful, I can also add Doe, Roe et al. (2012), DOI 10.1234/real.")
 check("verdict: same sentence, wrong author+year -> wrong_id", r["status"] == "wrong_id", f"{r['status']} {r['issues']}")
+
+r = status_of("1. Roe Z. Quantum cats. J. 2023;5:e1-e9.")
+check("verdict: title too short to search PubMed -> unchecked, not 'fabricated'",
+      r["status"] == "unchecked", f"{r['status']} {r['issues']}")
 
 r = status_of("1. Kim A. Sleep duration and mortality in older adults. J. 2019;1:1-2. doi:10.1234/nope")
 check("id_not_found suggests the real record", (r.get("suggestion") or {}).get("doi") == "10.1234/real", r.get("suggestion"))

@@ -110,6 +110,10 @@ The one remaining "false alarm" in the dev set is not one: that PMC article cite
 with the DOI of a different 2015 paper (`10.11646/zootaxa.3986.2.1`). The plugin flags it as
 `wrong_id`, which is correct.
 
+Two fabricated dev references with very short titles now come back `unchecked` instead of
+`not_found`: PubMed is not searched for titles under four content words, so "not found in Crossref,
+PubMed or arXiv" would overstate what was asked. A network or coverage gap is never reported as fake.
+
 Reproduce: `python3 -I bench/run_bench.py bench/refs_test.json` (about 3 minutes cold).
 
 ## Disclosure

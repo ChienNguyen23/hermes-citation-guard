@@ -175,8 +175,11 @@ def _segments(entry: str) -> list[str]:
 
 
 # Vancouver / AMA author block: "Smith J, van der Berg AB, Lee K, et al." ending in ". "
+# a name word starts with a capital letter, or is a surname particle ("van der Berg AB"); otherwise a
+# title ending in a capital letter ("Effects of vitamin D. Am J Clin Nutr") reads as one more author
+_NAME_WORD = r"(?:[^\W\d_a-z][\w'’\-]*|(?:van|der|den|de|von|da|di|le|la|du|del|dos|das|ten|ter|bin|al|el)\b)"
 _VANCOUVER_AUTHORS = re.compile(
-    r"^\s*(?:[^\W\d_][\w'’\-]*(?:[ -][^\W\d_][\w'’\-]*){0,2}\s+[A-Z]{1,4}(?:,\s*|\s*\.\s+|\s+(?=et\s+al)))+"
+    rf"^\s*(?:{_NAME_WORD}(?:[ -]{_NAME_WORD}){{0,2}}\s+[A-Z]{{1,4}}(?:,\s*|\s*\.\s+|\s+(?=et\s+al)))+"
     r"(?:et\s+al\.?\s*)?", re.U)
 
 
@@ -210,7 +213,7 @@ def guess_title(entry: str) -> Optional[str]:
     e = re.sub(r"\b(?:doi|PMID|PMCID|arXiv)\s*:?\s*", " ", e, flags=re.I)
     e = _strip_marker(e)
     m = re.search(r"[“\"]([^”\"]{12,400})[”\"]", e)
-    if m:
+    if m and len(m.group(1).split()) >= 3:  # a quoted word inside a title ("“polytraumatism”") is not the title
         return m.group(1).strip(" .,")
     m = re.search(r"\(\s*(?:19|20)\d{2}[a-z]?(?:,[^)]*)?\)\s*[.,]?\s+(.+?[.?!])(?:\s|$)", e)
     if m and len(m.group(1).split()) >= 3:
@@ -218,6 +221,13 @@ def guess_title(entry: str) -> Optional[str]:
     m = _VANCOUVER_AUTHORS.match(e)
     if m and m.end() < len(e):
         segs = _segments(e[m.end():])
+        # a person's initial inside the title ("The toxins of William B. Coley and ...") is not a full stop
+        # (only when the next piece reads as the sentence going on, with a long lower-case word such as
+        # "treatment"; a journal name "Am J Clin Nutr" / "Journal of Nutrition" is not merged in)
+        while len(segs) >= 2 and re.search(r"\b[A-Z]\.?$", segs[0]) and len(segs[0].split()) >= 3 \
+                and segs[1][:1].isupper() and not re.search(r"\d", segs[1]) \
+                and re.search(r"\b(?!with\b|from\b)[a-z]{4,}\b", segs[1]):
+            segs[:2] = [segs[0].rstrip(".") + ". " + segs[1]]
         if segs and len(segs[0].split()) >= 2:
             return segs[0].strip(" .")
     for seg in _segments(e):

@@ -5568,25 +5568,12 @@
  {
   "kind": "fabricated",
   "expect": "not_found",
-  "got": "metadata_mismatch",
+  "got": "unchecked",
   "cited": "Cao D, Jiao X, Liu X, Hennis A, Leske M, Nemesure B, et al. FT-IR spectroscopic studies of polyurethanes Part I. Bonding and corneal higher-order aberration analysis. PLoS One. 2012;7:e39278.",
   "issues": [
-   "year: cited 2012, registry 1993",
-   "authors: cited 'Cao' et al., registry has 'Jagdeesh Bandekar' et al."
+   "registry unreachable: eutils.ncbi.nlm.nih.gov refused the request (rate-limited or blocked)"
   ],
-  "registry": {
-   "title": "FT-IR spectroscopic studies of polyurethanes",
-   "first_author_family": "Bandekar",
-   "n_authors": 2,
-   "first_authors": [
-    "Jagdeesh Bandekar",
-    "Yuzi Okuzumi"
-   ],
-   "year": 1993,
-   "journal": "Journal of Molecular Structure: THEOCHEM",
-   "doi": "10.1016/0166-1280(93)87068-o",
-   "url": "https://doi.org/10.1016/0166-1280(93)87068-o"
-  },
+  "registry": null,
   "suggestion": null
  },
  {
@@ -5637,23 +5624,10 @@
   "got": "id_not_found",
   "cited": "Bandekar J, Klima S. FT-IR spectroscopic studies of polyurethanes Part I. Bonding between urethane, COC groups and the NH groups. J. Mol. Struct.. 1991;263:45-57. doi:10.1016/0022-2860(91)800df-0",
   "issues": [
-   "DOI 10.1016/0022-2860(91)800df-0 does not exist",
-   "a work with this title exists under a different identifier"
+   "DOI 10.1016/0022-2860(91)800df-0 does not exist"
   ],
   "registry": null,
-  "suggestion": {
-   "title": "FT-IR spectroscopic studies of polyurethanes Part I. Bonding between urethane COC groups and the NH Groups",
-   "first_author_family": "Bandekar",
-   "n_authors": 2,
-   "first_authors": [
-    "Jagdeesh Bandekar",
-    "Suzanne Klima"
-   ],
-   "year": 1991,
-   "journal": "Journal of Molecular Structure",
-   "doi": "10.1016/0022-2860(91)80054-8",
-   "url": "https://doi.org/10.1016/0022-2860(91)80054-8"
-  }
+  "suggestion": null
  },
  {
   "kind": "swapped_doi",
@@ -5677,19 +5651,7 @@
    "doi": "10.1007/s10570-016-1034-7",
    "url": "https://doi.org/10.1007/s10570-016-1034-7"
   },
-  "suggestion": {
-   "title": "FT-IR spectroscopic studies of polyurethanes Part I. Bonding between urethane COC groups and the NH Groups",
-   "first_author_family": "Bandekar",
-   "n_authors": 2,
-   "first_authors": [
-    "Jagdeesh Bandekar",
-    "Suzanne Klima"
-   ],
-   "year": 1991,
-   "journal": "Journal of Molecular Structure",
-   "doi": "10.1016/0022-2860(91)80054-8",
-   "url": "https://doi.org/10.1016/0022-2860(91)80054-8"
-  }
+  "suggestion": null
  },
  {
   "kind": "wrong_year",
@@ -5905,10 +5867,10 @@
  {
   "kind": "fabricated",
   "expect": "not_found",
-  "got": "not_found",
+  "got": "unchecked",
   "cited": "Kosmela P, Hejna A, Formela K, Haponiuk JT, Piszczyk Ł. STAR: ultrafast to ‘neonatal hepatitis’?. Cellulose. 2016;23:2929-2942.",
   "issues": [
-   "no matching record in Crossref, PubMed or arXiv (fabricated, or not indexed: book, local journal, report)"
+   "not in Crossref; title too short to search PubMed reliably"
   ],
   "registry": null,
   "suggestion": null

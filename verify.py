@@ -193,7 +193,8 @@ def _search(cit: dict, client: Client) -> Optional[dict]:
             consider(rec)
         if best_key[0] == 2:
             return best
-    if len(_content(title)) >= 4:
+    cit["_pubmed_skipped"] = len(_content(title)) < 4
+    if not cit["_pubmed_skipped"]:
         for pmid in client.pubmed_title_search(title, limit=3):
             try:
                 consider(client.pubmed(pmid))
@@ -290,6 +291,12 @@ def check_one(cit: dict, client: Client, check_retraction: bool = True, suggest:
                 result["issues"].append(f"title differs from registry: '{rec.get('title')}'")
         else:
             rec = _search(cit, client)
+            if rec is None and cit.get("_pubmed_skipped"):
+                # "not found" claims all three registries were asked; PubMed was not (title too short
+                # to search it reliably), so this is not evidence of fabrication
+                result["status"] = "unchecked"
+                result["issues"].append("not in Crossref; title too short to search PubMed reliably")
+                return result
             if rec is None:
                 result["status"] = "not_found"
                 result["issues"].append("no matching record in Crossref, PubMed or arXiv "
