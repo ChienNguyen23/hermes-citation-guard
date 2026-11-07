@@ -39,7 +39,7 @@ _Do not rely on flagged references until you have checked them yourself._
 |---|---|
 | **Reply guard** (`transform_llm_output` hook) | Every final reply that contains references (a DOI, PMID, arXiv id, or a full bibliographic entry) is checked. If anything fails, a short footer like the one above is **appended**. The reply itself is never rewritten. Clean replies pass through untouched. To stay fast it skips the closest-record search; the tool and `/citecheck` include it. |
 | **Tool** `verify_citations` | The model can check a bibliography before presenting it. Returns structured JSON per reference: status, issues, the registry record, and the closest real record when the cited one is wrong. |
-| **Command** `/citecheck <file or text>` | Full report for a manuscript or reference list: `.md`, `.txt`, `.bib` (BibTeX) or `.docx`. |
+| **Command** `/citecheck <file or text>` | Full report for a manuscript or reference list: `.md`, `.txt`, `.bib` (BibTeX) or `.docx`. A relative path is resolved against the session's working directory (`ctx.session_cwd()`); when in doubt pass an absolute path or `~/...`. |
 
 ## Verdicts
 
@@ -140,7 +140,7 @@ What you would want to know before installing:
 ## Tests
 
 ```bash
-python3 -I tests/test_offline.py     # 54 offline tests: extraction, BibTeX, every verdict, the hook
+python3 -I tests/test_offline.py     # 59 offline tests: extraction, BibTeX, every verdict, the hook
 python3 -I bench/run_bench.py        # live benchmark (network, a few minutes)
 
 # inside a real Hermes install: tool via the tool registry, hook via invoke_hook, /citecheck via the
