@@ -58,14 +58,15 @@ def _get_client() -> sources.Client:
     global _client
     mailto = str(_cfg("contact_email", "") or "")
     timeout = float(_cfg("request_timeout_s", 8) or 8)
-    if _client is None or _client.mailto != mailto or _client.timeout != timeout:
+    ncbi_key = str(_cfg("ncbi_api_key", "") or "")
+    if _client is None or _client.mailto != mailto or _client.timeout != timeout or _client.ncbi_api_key != ncbi_key:
         cache_path = None
         try:
             from plugins.plugin_storage import plugin_data_dir
             cache_path = Path(plugin_data_dir(PLUGIN_ID)) / "registry_cache.json"
         except Exception:
             cache_path = None
-        _client = sources.Client(sources.Cache(cache_path), mailto=mailto, timeout=timeout)
+        _client = sources.Client(sources.Cache(cache_path), mailto=mailto, timeout=timeout, ncbi_api_key=ncbi_key)
     return _client
 
 

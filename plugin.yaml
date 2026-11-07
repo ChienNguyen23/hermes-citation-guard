@@ -37,3 +37,7 @@ config_schema:
     type: str
     default: ""
     description: "Optional. Sent to Crossref and NCBI as the polite-pool contact address (their etiquette); used for nothing else."
+  ncbi_api_key:
+    type: str
+    default: ""
+    description: "Optional free NCBI API key, sent only to NCBI. NCBI then counts requests per key instead of per IP (10/s instead of 3/s)."

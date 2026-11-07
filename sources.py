@@ -66,11 +66,34 @@ _GATES = {
     "crossref_list": _HostGate(1.05, 1),
     "crossref_single": _HostGate(0.22, 1),
     "doi.org": _HostGate(0.1, 4),
-    "eutils.ncbi.nlm.nih.gov": _HostGate(0.34, 1),   # NCBI: 3 req/s without an API key
+    "eutils.ncbi.nlm.nih.gov": _HostGate(0.4, 1),    # NCBI: 3 req/s without an API key; stay under it
     "export.arxiv.org": _HostGate(3.0, 1),           # arXiv API etiquette: one call every 3 s
 }
 _DEFAULT_GATE = _HostGate(0.2, 2)
 _POLITE = {"crossref_list": _HostGate(0.35, 3), "crossref_single": _HostGate(0.12, 3)}
+
+
+# A host that rate-limits (429) or refuses us (403, or a 200 "Access Denied" page as NCBI serves
+# after a redirect) is not called again for BACKOFF_S: hammering a host that already said no is
+# how a machine gets blocked. Its references come back `unchecked`, never `fabricated`.
+BACKOFF_S = 600
+_BACKOFF_UNTIL: dict = {}
+
+
+def _back_off(host: str) -> None:
+    _BACKOFF_UNTIL[host] = time.monotonic() + BACKOFF_S
+
+
+def _backing_off(host: str) -> bool:
+    return _BACKOFF_UNTIL.get(host, 0.0) > time.monotonic()
+
+
+def _is_json(body: str) -> bool:
+    try:
+        json.loads(body)
+        return True
+    except ValueError:
+        return False
 
 
 def _gate_for(url: str, polite: bool) -> _HostGate:
@@ -137,7 +160,11 @@ class Client:
         if hit is not None:
             if hit == "__404__":
                 raise NotFound(url)
-            return hit
+            if "json" not in accept or _is_json(hit):   # an error page cached by an older version: refetch
+                return hit
+        host = urllib.parse.urlparse(url).hostname or ""
+        if _backing_off(host):
+            raise NetError(f"{host} rate-limited or refused an earlier request; not retried for now")
         gate = _gate_for(url, polite=bool(self.mailto))
         last: Exception = NetError(url)
         for attempt in range(2):
@@ -146,13 +173,26 @@ class Client:
                 with gate:
                     with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                         body = resp.read().decode("utf-8", "replace")
+                if "json" in accept and not _is_json(body):
+                    # an error or block page served with 200: never cache it, never parse it
+                    if re.search(r"access denied|blocked|too many requests|rate limit", body[:4000], re.I):
+                        _back_off(host)
+                        raise NetError(f"{host} refused the request (rate-limited or blocked)")
+                    last = NetError(f"{host} returned a non-JSON page")
+                    if attempt == 0:
+                        time.sleep(1.0)
+                        continue
+                    raise last
                 self.cache.put(key, body)
                 return body
             except urllib.error.HTTPError as e:
                 if e.code in (404, 410):
                     self.cache.put(key, "__404__")
                     raise NotFound(url) from None
-                last = NetError(f"HTTP {e.code} from {urllib.parse.urlparse(url).hostname}")
+                last = NetError(f"HTTP {e.code} from {host}")
+                if e.code == 403 or (e.code == 429 and attempt == 1):
+                    _back_off(host)
+                    raise last from None
                 if e.code in (429, 500, 502, 503, 504) and attempt == 0:
                     try:
                         wait = min(5.0, float(e.headers.get("Retry-After") or 2))

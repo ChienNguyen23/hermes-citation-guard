@@ -81,6 +81,7 @@ All optional, under `plugins.entries.citation-guard.settings` (or the Desktop Pl
 | `request_timeout_s` | `8` | Timeout for one registry request. |
 | `max_items` | `40` | Maximum references checked per reply or tool call. |
 | `contact_email` | `""` | Sent to Crossref and NCBI as the polite-pool contact (their etiquette; it raises Crossref's limit from 1 to 3 searches per second). Used for nothing else. |
+| `ncbi_api_key` | `""` | Optional free NCBI API key, sent only to NCBI. NCBI then counts requests per key instead of per IP (10/s instead of 3/s); the plugin keeps its own pace. |
 
 ## Benchmark
 
@@ -121,7 +122,10 @@ What you would want to know before installing:
   `citation-guard/<version>` and, only if you set `contact_email`, that address.
 - **Rate limits**: requests are paced to each registry's limits (Crossref, as reported in its own
   response headers: 1 search/s and 5 lookups/s without a contact address, 3 searches/s with one;
-  NCBI 3 requests/s without an API key; arXiv one call every 3 s).
+  NCBI kept under 3 requests/s without an API key; arXiv one call every 3 s). A registry that
+  answers 429/403, or serves an "Access Denied" page, is not called again for 10 minutes; its
+  references come back `unchecked`. Error pages are never cached. Several Hermes processes on one
+  machine share an IP but not a pacing budget, so heavy use should set `ncbi_api_key`.
 - **Local data**: a cache of registry answers (7 days) in the plugin's data directory
   (`<hermes home>/plugin-data/citation-guard/registry_cache.json`). Delete it any time.
 - **Files**: `/citecheck <path>` reads the file you name. Nothing else outside the plugin's data
@@ -140,7 +144,7 @@ What you would want to know before installing:
 ## Tests
 
 ```bash
-python3 -I tests/test_offline.py     # 59 offline tests: extraction, BibTeX, every verdict, the hook
+python3 -I tests/test_offline.py     # 66 offline tests: extraction, BibTeX, every verdict, the hook
 python3 -I bench/run_bench.py        # live benchmark (network, a few minutes)
 
 # inside a real Hermes install: tool via the tool registry, hook via invoke_hook, /citecheck via the

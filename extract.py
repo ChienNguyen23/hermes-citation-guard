@@ -38,7 +38,8 @@ _TRAILING = ".,;:'\"*_`>»”’"
 
 
 def _clean_doi(doi: str) -> str:
-    doi = re.split(r"</|<(?:br|a|span|sup|sub|em|i|b|strong)\b", doi.strip(), maxsplit=1, flags=re.I)[0]
+    # "](" ends the link text of a markdown link: [10.1/x](https://doi.org/10.1/x)
+    doi = re.split(r"</|<(?:br|a|span|sup|sub|em|i|b|strong)\b|\]\(", doi.strip(), maxsplit=1, flags=re.I)[0]
     while doi and doi[-1] in _TRAILING:
         doi = doi[:-1]
     # Strip unbalanced closing brackets (markdown links), keep balanced ones:
@@ -241,7 +242,8 @@ def guess_year(entry: str, title: Optional[str] = None) -> Optional[int]:
 
 def guess_first_author(entry: str) -> Optional[str]:
     emph = _emphasized_title(entry)
-    if emph and _strip_marker(entry).lstrip("*_“\"").startswith(emph[:10]):
+    # a bold author block ("**Rajkomar A, Oren E, et al.** Title ...") is not a title-first entry
+    if emph and not _authorish(emph) and _strip_marker(entry).lstrip("*_“\"").startswith(emph[:10]):
         # title-first form ("**Title** (Vaswani et al., 2017)"): the author sits after the title
         rest = entry.replace(emph, " ")
         m = re.search(r"([A-Z][\w'’\-]+)(?=\s+et al|,?\s*\(?(?:19|20)\d{2}\b|,?\s+(?:and|&)\s|,\s+[A-Z])", rest)

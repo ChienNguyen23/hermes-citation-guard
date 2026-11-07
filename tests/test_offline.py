@@ -41,6 +41,16 @@ check("extract: arXiv", by["[2]"].get("arxiv") == "1706.03762")
 md = "See [the paper](https://doi.org/10.1016/S0140-6736(20)31180-6)."
 check("extract: DOI inside markdown link", ex.find_ids(md).get("doi") == "10.1016/S0140-6736(20)31180-6",
       ex.find_ids(md))
+md2 = "DOI: [10.1126/scitranslmed.aab3719](https://doi.org/10.1126/scitranslmed.aab3719)"
+check("extract: DOI as markdown link text", ex.find_ids(md2).get("doi") == "10.1126/scitranslmed.aab3719",
+      ex.find_ids(md2))
+md3 = "DOI: [10.1016/S0140-6736(20)31180-6](https://doi.org/10.1016/S0140-6736(20)31180-6)."
+check("extract: markdown link text keeps balanced parentheses",
+      ex.find_ids(md3).get("doi") == "10.1016/S0140-6736(20)31180-6", ex.find_ids(md3))
+bold_auth = ("3. **Rajkomar A, Oren E, Chen K, et al.** Scalable and accurate deep learning with electronic "
+             "health records. *NPJ Digital Medicine*. 2018;1:18.")
+check("extract: bold author block -> first author, not a title word",
+      ex.guess_first_author(bold_auth) == "Rajkomar", ex.guess_first_author(bold_auth))
 for prose in ["Smith et al. (2020) showed that sleep improves memory in 300 older adults living alone.",
               "In 2019 the team released version 3, which cut latency by 40% across all regions we tested."]:
     check("extract: prose is not a reference", not ex.looks_like_reference(prose), prose[:40])
@@ -201,6 +211,48 @@ bad = clean + "\n2. Kim A. Sleep duration and mortality in older adults. J. 2019
 out = cg._on_llm_output(response_text=bad)
 check("hook: problem -> original kept + footer", bool(out) and out.startswith(bad) and "**Citation Guard**" in out)
 check("hook: never runs twice", cg._on_llm_output(response_text=out) is None)
+
+# ------------------------------------------------------------------ transport: block pages, back-off
+class _Resp:
+    def __init__(self, body):
+        self.body = body.encode()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+    def read(self):
+        return self.body
+
+
+_calls = []
+_real_urlopen = src.urllib.request.urlopen
+BLOCK_PAGE = "<!DOCTYPE html><html><title>NCBI - WWW Error Blocked Diagnostic</title>Access Denied</html>"
+src.urllib.request.urlopen = lambda req, timeout=0: (_calls.append(req.full_url), _Resp(BLOCK_PAGE))[1]
+src._BACKOFF_UNTIL.clear()
+tc = src.Client(cache=src.Cache(None))
+try:
+    tc.pubmed("26346497")
+    check("transport: block page -> NetError", False)
+except src.NetError as e:
+    check("transport: block page -> NetError (unchecked, not 'fabricated')", "refused" in str(e), str(e))
+check("transport: block page is not cached", not tc.cache.data, list(tc.cache.data)[:1])
+n = len(_calls)
+try:
+    tc.pubmed_title_search("deep learning for early detection of sepsis")
+except src.NetError:
+    pass
+check("transport: a host that refused us is not called again", len(_calls) == n, len(_calls) - n)
+src._BACKOFF_UNTIL.clear()
+stale = src.Cache(None)
+stale.put("application/json https://eutils.ncbi.nlm.nih.gov/x", BLOCK_PAGE)
+src.urllib.request.urlopen = lambda req, timeout=0: _Resp('{"ok": 1}')
+check("transport: a stale cached error page is refetched",
+      src.Client(cache=stale)._get("https://eutils.ncbi.nlm.nih.gov/x") == '{"ok": 1}')
+src.urllib.request.urlopen = _real_urlopen
+src._BACKOFF_UNTIL.clear()
 
 # ------------------------------------------------------------------ /citecheck path
 class FakeCtx:  # a gateway-served session: its cwd is not this process's cwd
