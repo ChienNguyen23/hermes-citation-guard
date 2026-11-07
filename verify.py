@@ -282,6 +282,10 @@ def check_one(cit: dict, client: Client, check_retraction: bool = True, suggest:
                 return result
             if not has_text:
                 result["issues"].append("identifier exists; no title given to compare")
+            elif score < TITLE_OK and not cit.get("title") and known == 2 and agree == 2:
+                # no title was cited (a reference inside a sentence, say), so there is nothing to
+                # compare; identifier + first author + year all agreeing is the evidence
+                result["issues"].append("identifier, first author and year agree; no title given to compare")
             elif score < TITLE_OK:
                 result["issues"].append(f"title differs from registry: '{rec.get('title')}'")
         else:

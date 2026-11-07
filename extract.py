@@ -256,7 +256,17 @@ def guess_first_author(entry: str) -> Optional[str]:
     if word.lower() in {"the", "a", "an", "in", "on", "world", "national", "american", "european",
                         "international", "who", "anonymous"}:
         return None
+    if word.lower() in _PROSE_OPENERS:
+        # a sentence that carries a reference ("If you want..., I can swap in Adams, Henry et al.
+        # (2022) ...") : take the author list wherever it sits, never the sentence's first word
+        m = re.search(r"\b([A-Z][\w'’\-]+)(?=(?:,\s*[A-Z][\w'’\-]+)*,?\s+et\s+al\b|,?\s*\((?:19|20)\d{2}\))", body)
+        return m.group(1) if m else None
     return word
+
+
+_PROSE_OPENERS = {"if", "you", "we", "i", "see", "also", "for", "this", "these", "here", "note", "and", "or",
+                  "it", "they", "as", "to", "from", "by", "with", "consider", "alternatively", "another",
+                  "plus", "optionally", "additionally", "finally", "then", "but", "however"}
 
 
 def _bib_fields(body: str) -> dict:

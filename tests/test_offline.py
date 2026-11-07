@@ -51,6 +51,13 @@ bold_auth = ("3. **Rajkomar A, Oren E, Chen K, et al.** Scalable and accurate de
              "health records. *NPJ Digital Medicine*. 2018;1:18.")
 check("extract: bold author block -> first author, not a title word",
       ex.guess_first_author(bold_auth) == "Rajkomar", ex.guess_first_author(bold_auth))
+swap = ("If you want the list strictly on prediction, I can swap #4 for the prospective multi-site validation "
+        "of the TREWS early-warning system: Adams, Henry, Sridharan et al. (2022), *Nature Medicine* 28, "
+        "1455-1460, DOI [10.1038/s41591-022-01894-0](https://doi.org/10.1038/s41591-022-01894-0).")
+check("extract: reference inside a sentence -> real first author, not 'If'",
+      ex.guess_first_author(swap) == "Adams", ex.guess_first_author(swap))
+check("extract: sentence without an author list -> no first author",
+      ex.guess_first_author("See doi:10.1234/abc for details.") is None, ex.guess_first_author("See doi:10.1234/abc for details."))
 for prose in ["Smith et al. (2020) showed that sleep improves memory in 300 older adults living alone.",
               "In 2019 the team released version 3, which cut latency by 40% across all regions we tested."]:
     check("extract: prose is not a reference", not ex.looks_like_reference(prose), prose[:40])
@@ -169,6 +176,12 @@ cases = [
 for name, line, want in cases:
     got = status_of(line)
     check(f"verdict: {name}", got["status"] == want, f"{got['status']} {got['issues']}")
+
+r = status_of("If useful, I can also add Kim, Lee et al. (2019), DOI 10.1234/real.")
+check("verdict: reference in a sentence, no title, author+year agree -> verified",
+      r["status"] == "verified", f"{r['status']} {r['issues']}")
+r = status_of("If useful, I can also add Doe, Roe et al. (2012), DOI 10.1234/real.")
+check("verdict: same sentence, wrong author+year -> wrong_id", r["status"] == "wrong_id", f"{r['status']} {r['issues']}")
 
 r = status_of("1. Kim A. Sleep duration and mortality in older adults. J. 2019;1:1-2. doi:10.1234/nope")
 check("id_not_found suggests the real record", (r.get("suggestion") or {}).get("doi") == "10.1234/real", r.get("suggestion"))
