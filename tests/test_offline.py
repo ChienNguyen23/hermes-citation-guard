@@ -216,6 +216,8 @@ check("command: relative path resolves against the session cwd",
 check("command: absolute path untouched", cg._resolve_user_path("/tmp/x.md") == Path("/tmp/x.md"))
 report = cg._handle_command("fixtures_mixed.md")
 check("command: relative file from the session cwd is read", "Citation check: fixtures_mixed.md" in report, report[:120])
+check("command: missing file says so (not 'no references')",
+      cg._handle_command("no_such_file.md").startswith("File not found:"))
 cg._ctx = None
 check("command: no ctx falls back to process cwd", cg._resolve_user_path("a.md") == Path.cwd() / "a.md")
 cg._ctx = _saved_ctx

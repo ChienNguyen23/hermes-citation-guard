@@ -214,6 +214,10 @@ def _handle_command(raw_args: str = "", **_: Any) -> str:
         except (OSError, zipfile.BadZipFile, KeyError) as e:
             return f"Could not read {candidate.name}: {e}"
         title = f"Citation check: {candidate.name}"
+    elif re.fullmatch(r"\S+\.(md|txt|bib|docx)", arg.strip("'\""), re.I):
+        return (f"File not found: {candidate}\n"
+                "Relative paths are resolved against the session's working directory; "
+                "pass an absolute path (or ~/...) to be sure.")
     cits = _citations_from(text, int(_cfg("max_items", 40) or 40) if not is_file else 200)
     if not cits:
         return "No checkable references found (need a DOI, PMID, arXiv id, or a full entry with authors, year and title)."
