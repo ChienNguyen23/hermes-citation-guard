@@ -22,7 +22,7 @@ from typing import Optional
 
 from .extract import content_tokens
 
-VERSION = "0.1.2"
+VERSION = "0.1.3"
 USER_AGENT = f"citation-guard/{VERSION} (Hermes Agent plugin; +https://github.com/ChienNguyen23/hermes-citation-guard)"
 CACHE_TTL_S = 7 * 24 * 3600
 CACHE_MAX = 20000
@@ -101,7 +101,8 @@ def _is_valid(body: str, accept: str) -> bool:
     if "json" in accept:
         return _is_json(body)
     if "atom" in accept:                   # arXiv: an Atom <feed>, not a 200 HTML error page
-        return "<feed" in body[:4000]
+        # arXiv reports a bad query as a 200 Atom feed whose single entry is an error (id .../api/errors)
+        return "<feed" in body[:4000] and "arxiv.org/api/errors" not in body
     return True
 
 

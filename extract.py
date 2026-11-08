@@ -274,7 +274,7 @@ def guess_first_author(entry: str) -> Optional[str]:
     body = _strip_marker(_strip_markdown(entry))
     # initials first ("B. I. Alzghoul, ...", "R D G Theakston (1995)"): the surname follows them
     m = re.match(r"(?:[A-Z]\.\s*|[A-Z]\s+){1,3}([^\W\d_][\w'’\-]{1,})", body, re.U)
-    if m:
+    if m and m.group(1)[:1].isupper():  # "A systematic review of ..." is an article, not an initial
         return m.group(1)
     m = re.match(r"([^\W\d_][\w'’\-]*)", body, re.U)
     if not m:

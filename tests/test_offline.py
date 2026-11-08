@@ -78,6 +78,9 @@ for ref, fa, ti in vn_styles:
     check(f"extract VN style: title '{ti[:25]}'", ex.guess_title(ref) == ti, ex.guess_title(ref))
 sims = {vf.title_similarity("Growth of colour tumours in mice", "Growth of color tumours colours in mice")}
 check("verify: title similarity does not depend on set order", round(sims.pop(), 4) == 0.8889)
+_art = "A systematic review of primary care outcomes. Journal of Family Medicine. 2020;10:1-2. doi:10.1000/example"
+check("extract: title-first entry opening with the article 'A' has no first author",
+      ex.guess_first_author(_art) is None, ex.guess_first_author(_art))
 swap = ("If you want the list strictly on prediction, I can swap #4 for the prospective multi-site validation "
         "of the TREWS early-warning system: Adams, Henry, Sridharan et al. (2022), *Nature Medicine* 28, "
         "1455-1460, DOI [10.1038/s41591-022-01894-0](https://doi.org/10.1038/s41591-022-01894-0).")
@@ -304,6 +307,17 @@ try:
 except src.NetError:
     check("transport: arXiv HTML error page -> NetError (unchecked, not id_not_found)", True)
 check("transport: arXiv HTML error page is not cached", not ac.cache.data, list(ac.cache.data)[:1])
+src.urllib.request.urlopen = lambda req, timeout=0: _Resp(
+    '<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>http://arxiv.org/api/errors#bad_query</id>'
+    '<title>Error</title></entry></feed>')
+src._BACKOFF_UNTIL.clear()
+ec = src.Client(cache=src.Cache(None))
+try:
+    ec.arxiv_title_search("attention is all you need transformer")
+    check("transport: arXiv API error feed -> NetError", False)
+except src.NetError:
+    check("transport: arXiv API error feed -> NetError (unchecked, never 'not found')", True)
+check("transport: arXiv API error feed is not cached", not ec.cache.data, list(ec.cache.data)[:1])
 import re as _re
 _yaml_ver = _re.search(r'^version:\s*"([^"]+)"', (Path(__file__).resolve().parent.parent / "plugin.yaml").read_text(), _re.M)
 check("User-Agent version matches plugin.yaml", _yaml_ver and _yaml_ver.group(1) == src.VERSION, src.VERSION)
