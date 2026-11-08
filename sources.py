@@ -22,7 +22,7 @@ from typing import Optional
 
 from .extract import content_tokens
 
-VERSION = "0.1.0"
+VERSION = "0.1.2"
 USER_AGENT = f"citation-guard/{VERSION} (Hermes Agent plugin; +https://github.com/ChienNguyen23/hermes-citation-guard)"
 CACHE_TTL_S = 7 * 24 * 3600
 CACHE_MAX = 20000
@@ -96,6 +96,15 @@ def _is_json(body: str) -> bool:
         return False
 
 
+def _is_valid(body: str, accept: str) -> bool:
+    """A registry answer in the format asked for; anything else is an error page (never cached)."""
+    if "json" in accept:
+        return _is_json(body)
+    if "atom" in accept:                   # arXiv: an Atom <feed>, not a 200 HTML error page
+        return "<feed" in body[:4000]
+    return True
+
+
 def _gate_for(url: str, polite: bool) -> _HostGate:
     parsed = urllib.parse.urlparse(url)
     host = parsed.hostname or ""
@@ -160,7 +169,7 @@ class Client:
         if hit is not None:
             if hit == "__404__":
                 raise NotFound(url)
-            if "json" not in accept or _is_json(hit):   # an error page cached by an older version: refetch
+            if _is_valid(hit, accept):   # an error page cached by an older version: refetch
                 return hit
         host = urllib.parse.urlparse(url).hostname or ""
         if _backing_off(host):
@@ -173,12 +182,12 @@ class Client:
                 with gate:
                     with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                         body = resp.read().decode("utf-8", "replace")
-                if "json" in accept and not _is_json(body):
+                if not _is_valid(body, accept):
                     # an error or block page served with 200: never cache it, never parse it
                     if re.search(r"access denied|blocked|too many requests|rate limit", body[:4000], re.I):
                         _back_off(host)
                         raise NetError(f"{host} refused the request (rate-limited or blocked)")
-                    last = NetError(f"{host} returned a non-JSON page")
+                    last = NetError(f"{host} returned an error page instead of {accept}")
                     if attempt == 0:
                         time.sleep(1.0)
                         continue
@@ -195,7 +204,7 @@ class Client:
                     raise last from None
                 if e.code in (429, 500, 502, 503, 504) and attempt == 0:
                     try:
-                        wait = min(5.0, float(e.headers.get("Retry-After") or 2))
+                        wait = max(0.0, min(5.0, float(e.headers.get("Retry-After") or 2)))
                     except (TypeError, ValueError):
                         wait = 2.0
                     time.sleep(wait)

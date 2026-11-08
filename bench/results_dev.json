@@ -5568,10 +5568,10 @@
  {
   "kind": "fabricated",
   "expect": "not_found",
-  "got": "unchecked",
+  "got": "not_found",
   "cited": "Cao D, Jiao X, Liu X, Hennis A, Leske M, Nemesure B, et al. FT-IR spectroscopic studies of polyurethanes Part I. Bonding and corneal higher-order aberration analysis. PLoS One. 2012;7:e39278.",
   "issues": [
-   "registry unreachable: eutils.ncbi.nlm.nih.gov refused the request (rate-limited or blocked)"
+   "no matching record in Crossref, PubMed or arXiv (fabricated, or not indexed: book, local journal, report)"
   ],
   "registry": null,
   "suggestion": null

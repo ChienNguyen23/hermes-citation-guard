@@ -76,6 +76,8 @@ vn_styles += [  # found on the pilot: initials and quoted words inside titles, t
 for ref, fa, ti in vn_styles:
     check(f"extract VN style: author {fa}", ex.guess_first_author(ref) == fa, ex.guess_first_author(ref))
     check(f"extract VN style: title '{ti[:25]}'", ex.guess_title(ref) == ti, ex.guess_title(ref))
+sims = {vf.title_similarity("Growth of colour tumours in mice", "Growth of color tumours colours in mice")}
+check("verify: title similarity does not depend on set order", round(sims.pop(), 4) == 0.8889)
 swap = ("If you want the list strictly on prediction, I can swap #4 for the prospective multi-site validation "
         "of the TREWS early-warning system: Adams, Henry, Sridharan et al. (2022), *Nature Medicine* 28, "
         "1455-1460, DOI [10.1038/s41591-022-01894-0](https://doi.org/10.1038/s41591-022-01894-0).")
@@ -293,6 +295,18 @@ stale.put("application/json https://eutils.ncbi.nlm.nih.gov/x", BLOCK_PAGE)
 src.urllib.request.urlopen = lambda req, timeout=0: _Resp('{"ok": 1}')
 check("transport: a stale cached error page is refetched",
       src.Client(cache=stale)._get("https://eutils.ncbi.nlm.nih.gov/x") == '{"ok": 1}')
+src.urllib.request.urlopen = lambda req, timeout=0: _Resp("<!DOCTYPE html><html><body>arXiv is down</body></html>")
+src._BACKOFF_UNTIL.clear()
+ac = src.Client(cache=src.Cache(None))
+try:
+    ac.arxiv("2101.00001")
+    check("transport: arXiv HTML error page -> NetError", False)
+except src.NetError:
+    check("transport: arXiv HTML error page -> NetError (unchecked, not id_not_found)", True)
+check("transport: arXiv HTML error page is not cached", not ac.cache.data, list(ac.cache.data)[:1])
+import re as _re
+_yaml_ver = _re.search(r'^version:\s*"([^"]+)"', (Path(__file__).resolve().parent.parent / "plugin.yaml").read_text(), _re.M)
+check("User-Agent version matches plugin.yaml", _yaml_ver and _yaml_ver.group(1) == src.VERSION, src.VERSION)
 src.urllib.request.urlopen = _real_urlopen
 src._BACKOFF_UNTIL.clear()
 

@@ -48,9 +48,12 @@ def title_similarity(cited: str, reg: str) -> float:
     if not tc or not tr:
         return 0.0
     # US/UK spelling and small typos: leukemia/leukaemia, tumor/tumour, behavior/behaviour
+    # registry words are tried in title order, not set order: set order follows the hash seed, so the
+    # same pair of titles could score on either side of TITLE_OK from one run to the next
     reg_set = set(tr)
+    reg_order = list(dict.fromkeys(tr))
     tc = [t if t in reg_set or len(t) < 5 else
-          next((r for r in reg_set if len(r) >= 5 and SequenceMatcher(None, t, r).ratio() >= 0.85), t)
+          next((r for r in reg_order if len(r) >= 5 and SequenceMatcher(None, t, r).ratio() >= 0.85), t)
           for t in tc]
     jacc = len(set(tc) & set(tr)) / len(set(tc) | set(tr))
     seq = SequenceMatcher(None, tc, tr, autojunk=False).ratio()
