@@ -1,5 +1,5 @@
 name: citation-guard
-version: "0.1.0"
+version: "0.1.1"
 manifest_version: 2
 api_version: 1
 description: "Catches fabricated, mismatched and retracted references before you rely on them. Checks every DOI / PMID / arXiv id and every full reference entry against doi.org, Crossref, PubMed and arXiv; flags ids that do not exist, ids that point to a different paper, wrong year or first author, works not found in any registry, and retractions (Crossref notices incl. Retraction Watch). Adds a verify_citations tool, a /citecheck command for manuscripts (.md .txt .bib .docx), and a reply guard that appends a warning footer when the agent's own answer cites something that does not check out. Deterministic, no LLM calls, no API keys, stdlib only."
