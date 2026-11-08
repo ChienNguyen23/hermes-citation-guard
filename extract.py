@@ -179,8 +179,8 @@ def _segments(entry: str) -> list[str]:
 # title ending in a capital letter ("Effects of vitamin D. Am J Clin Nutr") reads as one more author
 _NAME_WORD = r"(?:[^\W\d_a-z][\w'’\-]*|(?:van|der|den|de|von|da|di|le|la|du|del|dos|das|ten|ter|bin|al|el)\b)"
 _VANCOUVER_AUTHORS = re.compile(
-    rf"^\s*(?:{_NAME_WORD}(?:[ -]{_NAME_WORD}){{0,2}}\s+[A-Z]{{1,4}}(?:,\s*|\s*\.\s+|\s+(?=et\s+al)))+"
-    r"(?:et\s+al\.?\s*)?", re.U)
+    rf"^\s*(?:{_NAME_WORD}(?:[ -]{_NAME_WORD}){{0,2}}\s+[A-Z]{{1,4}}(?:,\s*|\s*\.\s+|\s+(?=(?:and\s+|&\s*)?et\s+al)))+"
+    r"(?:(?:and\s+|&\s*)?et\s+al\.?\s*)?", re.U)  # "Hay AD and et al." ends the block too
 
 
 def _authorish(seg: str) -> bool:

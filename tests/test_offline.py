@@ -68,6 +68,10 @@ vn_styles += [  # found on the pilot: initials and quoted words inside titles, t
     ("Kroupa J. Definition of “polytrauma” and “polytraumatism”. Acta Chir Orthop Traumatol Cech. 1990;57(4):347-60.",
      "Kroupa", "Definition of “polytrauma” and “polytraumatism”"),
     ("Lee A, Kim B. Effects of vitamin D. Am J Clin Nutr. 2010;91(5):1-9.", "Lee", "Effects of vitamin D"),
+    ("Ingram J, Cabral C, Hay AD and et al. Parents' information needs, self-efficacy and influences on "
+     "consulting for childhood respiratory tract infections: a qualitative study. BMC Fam Pract. 2013;14:106.",
+     "Ingram", "Parents' information needs, self-efficacy and influences on consulting for childhood "
+     "respiratory tract infections: a qualitative study"),
 ]
 for ref, fa, ti in vn_styles:
     check(f"extract VN style: author {fa}", ex.guess_first_author(ref) == fa, ex.guess_first_author(ref))
